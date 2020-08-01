@@ -1,5 +1,4 @@
-@import "bootstrap.css";
-@import "flexslider.css";
-@import "animate.css";
-@import "custom-styles.css";
-
+@import "vendor/bootstrap.css";
+@import "vendor/flexslider.css";
+@import "vendor/animate.css";
+@import "main.css";
