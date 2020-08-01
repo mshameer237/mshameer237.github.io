@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="22px" viewBox="0 0 39 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NexGenSm_Wesite_Home_Page-UI" transform="translate(-148.000000, -614.000000)" fill-rule="nonzero" fill="#30D6C7">
+            <g id="arrow" transform="translate(148.000000, 614.000000)">
+                <g id="Group">
+                    <g id="Shape">
+                        <path d="M8.19411254,13.4 L12.5823377,17.788225 C13.519596,18.7254834 13.519596,20.2450794 12.5823377,21.1823377 C11.6450794,22.119596 10.1254834,22.119596 9.18822509,21.1823377 L0.702943726,12.6970563 C0.234314575,12.2284271 -3.8302704e-16,11.6142136 0,11 C-2.4980016e-16,10.3857864 0.234314575,9.77157286 0.702943726,9.30294373 L0.702943726,9.30294373 L9.18822509,0.817662344 C10.1254834,-0.119595952 11.6450794,-0.119595952 12.5823377,0.817662344 C13.519596,1.75492064 13.519596,3.27451659 12.5823377,4.21177491 L8.19411254,8.6 L36,8.6 C37.3254833,8.6 38.4,9.6745166 38.4,11 C38.4,12.3254834 37.3254833,13.4 36,13.4 L8.19411254,13.4 Z" transform="translate(19.200000, 11.000000) scale(-1, 1) translate(-19.200000, -11.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
