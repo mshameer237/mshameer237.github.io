@@ -1,0 +1,77 @@
+/* 
+================================================
+Fonts
+================================================ */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+
+/* ------------------------------------------------ */
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #4A5A7D !important;
+}
+
+.custom-header .navbar {
+	margin-bottom: 0px;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	width: 100%;
+	border-radius: 0;
+	background: transparent;
+	border: none;
+}
+
+#header.sticky {
+	transition: 0.2s all ease-in-out;
+	background: rgba(255, 255, 255, 1);
+	border-bottom: 4px solid #EA5E1B;
+}
+
+.banner .flex-direction-nav a {
+	height: 50px;
+}
+
+.flex-direction-nav .flex-next {
+	right: 5px !important;
+}
+
+.flex-direction-nav .flex-prev {
+	left: 5px !important;
+}
+
+.banner .flex-control-nav {
+	bottom: 10px;
+}
+
+.banner .flexslider {
+	border: none;
+}
+
+.banner .flex-control-paging li a {
+	width: 16px;
+	height: 4px;
+}
+
+.custom-header .navbar-nav{
+
+}
+
+.custom-header .navbar-nav li a{
+	font-size: 14px;
+	font-weight: 400;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+.custom-header .navbar-nav li a:hover{
+		color: #27AE60 !important;
+}
+
+.custom-header .navbar-nav li.active a{
+	color: #27AE60 !important;
+	font-weight: 700;
+}
