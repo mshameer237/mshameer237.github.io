@@ -12,32 +12,41 @@
     <!-- banner -->
     <section class="banner text-center pt-5 pb-5">
       <div class="my-details-card animated">
-        <div class="profile-image">
+        <div class="profile-image wow fadeInDown">
           <img src="images/profile.png" alt="" />
         </div>
-        <h1 class="main-title-lg">
-          Hello! I'm <span>Shameer</span>. <br />I am a
-          <span> UI / UX designer</span> and <span>Front-end Developer</span>.
+        <h1 class="main-title-lg wow fadeInUp">
+          Hello! I'm <span>Shameer</span>. <br />I am an
+          <span> UI / UX Designer</span> and a <span>Front-end Developer</span>.
         </h1>
-        <button class="btn btn-primary">Portfolio</button>
+        <a
+          href="#portfolio"
+          class="scroll-set wow fadeInUp d-block"
+          data-wow-delay="1s"
+          ><div class="button-down"></div
+        ></a>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
-        <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')">
-            Show all
+        <h1>Portfolio</h1>
+        <div id="myBtnContainer" class="mt-5">
+          <button
+            class="btn btn-filter active"
+            onclick="filterSelection('all')"
+          >
+            All
           </button>
-          <button class="btn" onclick="filterSelection('website')">
-            Website
+          <button class="btn btn-filter" onclick="filterSelection('website')">
+            Websites
           </button>
-          <button class="btn" onclick="filterSelection('webapp')">
-            Web Application
+          <button class="btn btn-filter" onclick="filterSelection('webapp')">
+            Web Applications
           </button>
         </div>
         <!-- Portfolio Gallery Grid -->
         <div class="row">
-          <div class="column col-md-4 website" data-item="panel-1">
+          <div class="column col-md-4 website">
             <div class="content">
               <div class="project-img">
                 <img src="images/nexgen.png" alt="nexgen" />
@@ -48,6 +57,12 @@
                 </h4>
                 <p class="card-text">
                   A simple website designed and developed for an IT company.
+                  <a
+                    href="javascript:void(0)"
+                    class="card-expand"
+                    data-item="panel-1"
+                    >see more</a
+                  >
                 </p>
                 <ul class="technology-used">
                   <li
@@ -95,7 +110,7 @@
               </div>
             </div>
           </div>
-          <div class="column col-md-4 website" data-item="panel-2">
+          <div class="column col-md-4 website">
             <div class="content">
               <div class="project-img">
                 <img src="images/nexgen.png" alt="nexgen" />
@@ -106,6 +121,12 @@
                 </h4>
                 <p class="card-text">
                   A simple website designed and developed for an IT company.
+                  <a
+                    href="javascript:void(0)"
+                    class="card-expand"
+                    data-item="panel-2"
+                    >see more</a
+                  >
                 </p>
                 <ul class="technology-used">
                   <li
@@ -221,24 +242,21 @@
     <script src="js/custom.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
     <script>
-      $(".flexslider").flexslider({
-        animation: "slide",
-      });
+      new WOW().init();
     </script>
     <script>
-      filterSelection("all"); // Execute the function and show all columns
+      filterSelection("all");
       function filterSelection(c) {
         var x, i;
         x = document.getElementsByClassName("column");
         if (c == "all") c = "";
-        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+
         for (i = 0; i < x.length; i++) {
           w3RemoveClass(x[i], "show");
           if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
         }
       }
 
-      // Show filtered elements
       function w3AddClass(element, name) {
         var i, arr1, arr2;
         arr1 = element.className.split(" ");
@@ -250,7 +268,6 @@
         }
       }
 
-      // Hide elements that are not selected
       function w3RemoveClass(element, name) {
         var i, arr1, arr2;
         arr1 = element.className.split(" ");
@@ -263,7 +280,6 @@
         element.className = arr1.join(" ");
       }
 
-      // Add active class to the current button (highlight it)
       var btnContainer = document.getElementById("myBtnContainer");
       var btns = btnContainer.getElementsByClassName("btn");
       for (var i = 0; i < btns.length; i++) {
@@ -280,19 +296,36 @@
       });
     </script>
     <script>
-      // $(".content").click(function () {
-      //   $(".content").children(".content-details").toggleClass("expand");
-      // });
-
       $(document).ready(function () {
-        $(".column").click(function () {
+        $(".card-expand").click(function () {
           var tab_id = $(this).attr("data-item");
-
-          // $("column").removeClass("expand");
-          // $(".content-details").removeClass("expand");
-
           $(this).toggleClass("expand");
           $("#" + tab_id).toggleClass("expand");
+        });
+      });
+    </script>
+    <script>
+      $(function () {
+        $(".scroll-set").click(function () {
+          if (
+            location.pathname.replace(/^\//, "") ==
+              this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+              $("html, body").animate(
+                {
+                  scrollTop: target.offset().top,
+                },
+                1000
+              );
+              return false;
+            }
+          }
         });
       });
     </script>
