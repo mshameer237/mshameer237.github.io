@@ -16,8 +16,8 @@
           <img src="images/profile.png" alt="" />
         </div>
         <h1 class="main-title-lg wow fadeInUp">
-          Hello! I'm <span>Shameer</span>. <br />I am an
-          <span> UI / UX Designer</span> and an <span>UI Developer</span>.
+          Hello! I'm <span>Shameer</span>. <br />I am an UI / UX Designer and an
+          <span>UI Developer</span>.
         </h1>
         <div class="download-resume mt-4 mb-4 wow fadeInUp" data-wow-delay="1s">
           <a href="resume/resume-shameer.pdf" download target="_blank"
@@ -35,474 +35,615 @@
     </section>
     <section class="portfolio" id="portfolio">
       <div class="container">
-        <h1>Portfolio</h1>
-        <div id="myBtnContainer" class="mt-5">
-          <button
-            class="btn btn-filter active"
-            onclick="filterSelection('all')"
-          >
-            All
-          </button>
-          <button class="btn btn-filter" onclick="filterSelection('website')">
-            Websites
-          </button>
-          <button class="btn btn-filter" onclick="filterSelection('webapp')">
-            Web Applications
-          </button>
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-1"><h1>Portfolio</h1></li>
+          <li class="tab-link skills-tab" data-tab="tab-2"><h1>Skills</h1></li>
+        </ul>
+        <div id="tab-1" class="tab-content current">
+          <div id="myBtnContainer" class="mt-5">
+            <button
+              class="btn btn-filter active"
+              onclick="filterSelection('all')"
+            >
+              All
+            </button>
+            <button class="btn btn-filter" onclick="filterSelection('website')">
+              Websites
+            </button>
+            <button class="btn btn-filter" onclick="filterSelection('webapp')">
+              Web Applications
+            </button>
+          </div>
+          <!-- Portfolio Gallery Grid -->
+          <div class="row">
+            <div class="column col-md-4 website">
+              <div class="content">
+                <div class="project-img">
+                  <img src="images/nexgen.png" alt="nexgen" />
+                </div>
+                <div class="content-details" id="panel-1">
+                  <h4 class="card-title">
+                    NexGen
+                  </h4>
+                  <p class="card-text">
+                    A simple website designed and developed for an IT company.
+                    <span class="animated">
+                      NexGen uses Bootstrap 4 for a mobile-first layout, with
+                      jQuery for easy page manipulation. It's completely
+                      responsive across mobile and tablet devices.</span
+                    >
+                    <span class="animated">
+                      UX and UI Design is done through Axure and sketch.</span
+                    >
+                    <a
+                      href="javascript:void(0)"
+                      class="card-expand"
+                      data-item="panel-1"
+                      >more</a
+                    >
+                  </p>
+                  <ul class="technology-used">
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="HTML5"
+                    >
+                      <img src="images/icons/html5.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="CSS3"
+                    >
+                      <img src="images/icons/css.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="JavaScript"
+                    >
+                      <img src="images/icons/js.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="jQuery"
+                    >
+                      <img src="images/icons/jquery.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Bootstrap 4"
+                    >
+                      <img src="images/icons/bootstrap.png" alt="" />
+                    </li>
+                  </ul>
+                  <a
+                    href="sites/NexGenSm/index.html"
+                    target="_blank"
+                    class="card-link"
+                    ><span class="mr-2"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></span>
+                    View Page</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="column col-md-4 website">
+              <div class="content">
+                <div class="project-img">
+                  <img src="images/nexgen.png" alt="nexgen" />
+                </div>
+                <div class="content-details" id="panel-2">
+                  <h4 class="card-title">
+                    Geojit
+                  </h4>
+                  <p class="card-text">
+                    A complex website developed for a financial services
+                    company.
+                    <span class="animated">
+                      Geojit uses Bootstrap 3 for a mobile-first layout, with
+                      jQuery and javaScript for easy page manipulation. It's
+                      completely responsive across mobile and tablet
+                      devices.</span
+                    >
+                    <span class="animated">
+                      UX and UI Design is done through Axure and sketch.</span
+                    >
+                    <a
+                      href="javascript:void(0)"
+                      class="card-expand"
+                      data-item="panel-2"
+                      >more</a
+                    >
+                  </p>
+                  <ul class="technology-used">
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="HTML5"
+                    >
+                      <img src="images/icons/html5.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="CSS3"
+                    >
+                      <img src="images/icons/css.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="JavaScript"
+                    >
+                      <img src="images/icons/js.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="jQuery"
+                    >
+                      <img src="images/icons/jquery.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Bootstrap 3"
+                    >
+                      <img src="images/icons/bootstrap.png" alt="" />
+                    </li>
+                  </ul>
+                  <a
+                    href="sites/Geojit_Rewamp/index.html"
+                    target="_blank"
+                    class="card-link"
+                    ><span class="mr-2"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></span>
+                    View Page</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="column col-md-4 website">
+              <div class="content">
+                <div class="project-img">
+                  <img src="images/nexgen.png" alt="nexgen" />
+                </div>
+                <div class="content-details" id="panel-3">
+                  <h4 class="card-title">
+                    Pippin
+                  </h4>
+                  <p class="card-text">
+                    A simple website developed for a title services company.
+                    <span class="animated">
+                      Pippin uses Bootstrap 3 for a mobile-first layout, with
+                      jQuery and javaScript for easy page manipulation. It's
+                      completely responsive across mobile and tablet
+                      devices.</span
+                    >
+                    <span class="animated">
+                      UX and UI Design is done through Axure and sketch.</span
+                    >
+                    <a
+                      href="javascript:void(0)"
+                      class="card-expand"
+                      data-item="panel-3"
+                      >more</a
+                    >
+                  </p>
+                  <ul class="technology-used">
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="HTML5"
+                    >
+                      <img src="images/icons/html5.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="CSS3"
+                    >
+                      <img src="images/icons/css.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="jQuery"
+                    >
+                      <img src="images/icons/jquery.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Bootstrap 3"
+                    >
+                      <img src="images/icons/bootstrap.png" alt="" />
+                    </li>
+                  </ul>
+                  <a
+                    href="sites/pippin/index.html"
+                    target="_blank"
+                    class="card-link"
+                    ><span class="mr-2"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></span>
+                    View Page</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="column col-md-4 website">
+              <div class="content">
+                <div class="project-img">
+                  <img src="images/nexgen.png" alt="nexgen" />
+                </div>
+                <div class="content-details" id="panel-4">
+                  <h4 class="card-title">
+                    Cork
+                  </h4>
+                  <p class="card-text">
+                    A simple website designed and developed for a IT company.
+                    <span class="animated">
+                      Cork uses Bootstrap 4 for a mobile-first layout, with
+                      jQuery and javaScript for easy page manipulation. It also
+                      uses PHP from mail functionalities. It's completely
+                      responsive across mobile and tablet devices.</span
+                    >
+                    <a
+                      href="javascript:void(0)"
+                      class="card-expand"
+                      data-item="panel-4"
+                      >more</a
+                    >
+                  </p>
+                  <ul class="technology-used">
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="HTML5"
+                    >
+                      <img src="images/icons/html5.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="CSS3"
+                    >
+                      <img src="images/icons/css.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="JavaScript"
+                    >
+                      <img src="images/icons/js.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="jQuery"
+                    >
+                      <img src="images/icons/jquery.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Bootstrap 3"
+                    >
+                      <img src="images/icons/bootstrap.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="PHP"
+                    >
+                      <img src="images/icons/php.png" alt="" />
+                    </li>
+                  </ul>
+                  <a
+                    href="sites/cork/index.html"
+                    target="_blank"
+                    class="card-link"
+                    ><span class="mr-2"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></span>
+                    View Page</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="column col-md-4 webapp">
+              <div class="content">
+                <div class="project-img">
+                  <img src="images/nexgen.png" alt="nexgen" />
+                </div>
+                <div class="content-details" id="panel-6">
+                  <h4 class="card-title">
+                    Alkoot
+                  </h4>
+                  <p class="card-text">
+                    A web-application developed for a Healthcare company.
+                    <span class="animated">
+                      Alkoot wep app uses Bootstrap 4 for a mobile-first layout,
+                      with jQuery and javaScript for easy page
+                      manipulation..</span
+                    >
+                    <span class="animated">
+                      This layout was implemented in Angular JS to become a
+                      full-fledged application
+                    </span>
+                    <a
+                      href="javascript:void(0)"
+                      class="card-expand"
+                      data-item="panel-6"
+                      >more</a
+                    >
+                  </p>
+                  <ul class="technology-used">
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="HTML5"
+                    >
+                      <img src="images/icons/html5.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="CSS3"
+                    >
+                      <img src="images/icons/css.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="JavaScript"
+                    >
+                      <img src="images/icons/js.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="jQuery"
+                    >
+                      <img src="images/icons/jquery.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Bootstrap 4"
+                    >
+                      <img src="images/icons/bootstrap.png" alt="" />
+                    </li>
+                  </ul>
+                  <a
+                    href="sites/Alkoot/dashboard.html"
+                    target="_blank"
+                    class="card-link"
+                    ><span class="mr-2"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></span>
+                    View Page</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="column col-md-4 webapp">
+              <div class="content">
+                <div class="project-img">
+                  <img src="images/nexgen.png" alt="nexgen" />
+                </div>
+                <div class="content-details" id="panel-5">
+                  <h4 class="card-title">
+                    Intellithink
+                  </h4>
+                  <p class="card-text">
+                    A web-application designed and developed for a IOT company.
+                    <span class="animated">
+                      Intellithink wep app uses Bootstrap 3 for a mobile-first
+                      layout, with jQuery and javaScript for easy page
+                      manipulation..</span
+                    >
+                    <span class="animated">
+                      This layout was implemented in Angular 2 to become a
+                      full-fledged application
+                    </span>
+                    <a
+                      href="javascript:void(0)"
+                      class="card-expand"
+                      data-item="panel-5"
+                      >more</a
+                    >
+                  </p>
+                  <ul class="technology-used">
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="HTML5"
+                    >
+                      <img src="images/icons/html5.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="CSS3"
+                    >
+                      <img src="images/icons/css.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="JavaScript"
+                    >
+                      <img src="images/icons/js.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="jQuery"
+                    >
+                      <img src="images/icons/jquery.png" alt="" />
+                    </li>
+                    <li
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Bootstrap 3"
+                    >
+                      <img src="images/icons/bootstrap.png" alt="" />
+                    </li>
+                  </ul>
+                  <a
+                    href="sites/Intellithink-app/dashboard.html"
+                    target="_blank"
+                    class="card-link"
+                    ><span class="mr-2"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></span>
+                    View Page</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- END GRID -->
+          </div>
         </div>
-        <!-- Portfolio Gallery Grid -->
-        <div class="row">
-          <div class="column col-md-4 website">
-            <div class="content">
-              <div class="project-img">
-                <img src="images/nexgen.png" alt="nexgen" />
+        <div id="tab-2" class="tab-content">
+          <!-- SKILLS -->
+          <div class="skills mt-5">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="skill-card">
+                  <h5 class="skill-title">Development</h5>
+                  <div class="skillBox">
+                    <div class="skillBar">
+                      <div class="skill-icon">
+                        <img src="images/icons/html5.png" alt="" />
+                        <span class="skillName"> HTML5 </span>
+                      </div>
+                      <div class="skill-content">
+                        <div class="skillArea">
+                          <span class="skill-HTML"> </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skillBar">
+                      <div class="skill-icon">
+                        <img src="images/icons/css.png" alt="" />
+                        <span class="skillName"> CSS3 </span>
+                      </div>
+                      <div class="skill-content">
+                        <div class="skillArea">
+                          <span class="skill-CSS"> </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skillBar">
+                      <div class="skill-icon">
+                        <img src="images/icons/js.png" alt="" />
+                        <span class="skillName"> JavaScript </span>
+                      </div>
+                      <div class="skill-content">
+                        <div class="skillArea">
+                          <span class="skill-JS"> </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skillBar">
+                      <div class="skill-icon">
+                        <img src="images/icons/react.png" alt="" />
+                        <span class="skillName"> React JS </span>
+                      </div>
+                      <div class="skill-content">
+                        <div class="skillArea">
+                          <span class="skill-React"> </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skillBar">
+                      <div class="skill-icon">
+                        <img src="images/icons/jquery.png" alt="" />
+                        <span class="skillName"> jQuery </span>
+                      </div>
+                      <div class="skill-content">
+                        <div class="skillArea">
+                          <span class="skill-jquery"> </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skillBar">
+                      <div class="skill-icon">
+                        <img src="images/icons/sass.png" alt="" />
+                        <span class="skillName"> Sass </span>
+                      </div>
+                      <div class="skill-content">
+                        <div class="skillArea">
+                          <span class="skill-sass"> </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skillBar">
+                      <div class="skill-icon">
+                        <img src="images/icons/react.png" alt="" />
+                        <span class="skillName"> React Native </span>
+                      </div>
+                      <div class="skill-content">
+                        <div class="skillArea">
+                          <span class="skill-native"> </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skillBar">
+                      <div class="skill-icon">
+                        <img src="images/icons/storybook.png" alt="" />
+                        <span class="skillName"> StoryBook js </span>
+                      </div>
+                      <div class="skill-content">
+                        <div class="skillArea">
+                          <span class="skill-story"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="content-details" id="panel-1">
-                <h4 class="card-title">
-                  NexGen
-                </h4>
-                <p class="card-text">
-                  A simple website designed and developed for an IT company.
-                  <span class="animated">
-                    NexGen uses Bootstrap 4 for a mobile-first layout, with
-                    jQuery for easy page manipulation. It's completely
-                    responsive across mobile and tablet devices.</span
-                  >
-                  <span class="animated">
-                    UX and UI Design is done through Axure and sketch.</span
-                  >
-                  <a
-                    href="javascript:void(0)"
-                    class="card-expand"
-                    data-item="panel-1"
-                    >more</a
-                  >
-                </p>
-                <ul class="technology-used">
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="HTML5"
-                  >
-                    <img src="images/icons/html5.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="CSS3"
-                  >
-                    <img src="images/icons/css.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="JavaScript"
-                  >
-                    <img src="images/icons/js.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="jQuery"
-                  >
-                    <img src="images/icons/jquery.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="Bootstrap 4"
-                  >
-                    <img src="images/icons/bootstrap.png" alt="" />
-                  </li>
-                </ul>
-                <a
-                  href="sites/NexGenSm/index.html"
-                  target="_blank"
-                  class="card-link"
-                  ><span class="mr-2"
-                    ><i class="fas fa-external-link-alt"></i
-                  ></span>
-                  View Page</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="column col-md-4 website">
-            <div class="content">
-              <div class="project-img">
-                <img src="images/nexgen.png" alt="nexgen" />
-              </div>
-              <div class="content-details" id="panel-2">
-                <h4 class="card-title">
-                  Geojit
-                </h4>
-                <p class="card-text">
-                  A complex website developed for a financial services company.
-                  <span class="animated">
-                    Geojit uses Bootstrap 3 for a mobile-first layout, with
-                    jQuery and javaScript for easy page manipulation. It's
-                    completely responsive across mobile and tablet
-                    devices.</span
-                  >
-                  <span class="animated">
-                    UX and UI Design is done through Axure and sketch.</span
-                  >
-                  <a
-                    href="javascript:void(0)"
-                    class="card-expand"
-                    data-item="panel-2"
-                    >more</a
-                  >
-                </p>
-                <ul class="technology-used">
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="HTML5"
-                  >
-                    <img src="images/icons/html5.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="CSS3"
-                  >
-                    <img src="images/icons/css.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="JavaScript"
-                  >
-                    <img src="images/icons/js.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="jQuery"
-                  >
-                    <img src="images/icons/jquery.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="Bootstrap 3"
-                  >
-                    <img src="images/icons/bootstrap.png" alt="" />
-                  </li>
-                </ul>
-                <a
-                  href="sites/Geojit_Rewamp/index.html"
-                  target="_blank"
-                  class="card-link"
-                  ><span class="mr-2"
-                    ><i class="fas fa-external-link-alt"></i
-                  ></span>
-                  View Page</a
-                >
+              <div class="col-md-6">
+                <div class="skill-card2">
+                  <h5 class="skill-title">Design</h5>
+                  <div class="skillBox">
+                    <div class="skillBar">
+                      <div class="skill-icon">
+                        <img src="images/icons/sketch.png" alt="" />
+                        <span class="skillName"> Sketch </span>
+                      </div>
+                      <div class="skill-content">
+                        <div class="skillArea">
+                          <span class="skill-Sketch"> </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skillBar">
+                      <div class="skill-icon">
+                        <img src="images/icons/xd.png" alt="" />
+                        <span class="skillName"> Adobe XD </span>
+                      </div>
+                      <div class="skill-content">
+                        <div class="skillArea">
+                          <span class="skill-xd"> </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="column col-md-4 website">
-            <div class="content">
-              <div class="project-img">
-                <img src="images/nexgen.png" alt="nexgen" />
-              </div>
-              <div class="content-details" id="panel-3">
-                <h4 class="card-title">
-                  Pippin
-                </h4>
-                <p class="card-text">
-                  A simple website developed for a title services company.
-                  <span class="animated">
-                    Pippin uses Bootstrap 3 for a mobile-first layout, with
-                    jQuery and javaScript for easy page manipulation. It's
-                    completely responsive across mobile and tablet
-                    devices.</span
-                  >
-                  <span class="animated">
-                    UX and UI Design is done through Axure and sketch.</span
-                  >
-                  <a
-                    href="javascript:void(0)"
-                    class="card-expand"
-                    data-item="panel-3"
-                    >more</a
-                  >
-                </p>
-                <ul class="technology-used">
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="HTML5"
-                  >
-                    <img src="images/icons/html5.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="CSS3"
-                  >
-                    <img src="images/icons/css.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="jQuery"
-                  >
-                    <img src="images/icons/jquery.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="Bootstrap 3"
-                  >
-                    <img src="images/icons/bootstrap.png" alt="" />
-                  </li>
-                </ul>
-                <a
-                  href="sites/pippin/index.html"
-                  target="_blank"
-                  class="card-link"
-                  ><span class="mr-2"
-                    ><i class="fas fa-external-link-alt"></i
-                  ></span>
-                  View Page</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="column col-md-4 website">
-            <div class="content">
-              <div class="project-img">
-                <img src="images/nexgen.png" alt="nexgen" />
-              </div>
-              <div class="content-details" id="panel-4">
-                <h4 class="card-title">
-                  Cork
-                </h4>
-                <p class="card-text">
-                  A simple website designed and developed for a IT company.
-                  <span class="animated">
-                    Cork uses Bootstrap 4 for a mobile-first layout, with jQuery
-                    and javaScript for easy page manipulation. It also uses PHP
-                    from mail functionalities. It's completely responsive across
-                    mobile and tablet devices.</span
-                  >
-                  <a
-                    href="javascript:void(0)"
-                    class="card-expand"
-                    data-item="panel-4"
-                    >more</a
-                  >
-                </p>
-                <ul class="technology-used">
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="HTML5"
-                  >
-                    <img src="images/icons/html5.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="CSS3"
-                  >
-                    <img src="images/icons/css.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="JavaScript"
-                  >
-                    <img src="images/icons/js.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="jQuery"
-                  >
-                    <img src="images/icons/jquery.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="Bootstrap 3"
-                  >
-                    <img src="images/icons/bootstrap.png" alt="" />
-                  </li>
-                  <li data-toggle="tooltip" data-placement="bottom" title="PHP">
-                    <img src="images/icons/php.png" alt="" />
-                  </li>
-                </ul>
-                <a
-                  href="sites/cork/index.html"
-                  target="_blank"
-                  class="card-link"
-                  ><span class="mr-2"
-                    ><i class="fas fa-external-link-alt"></i
-                  ></span>
-                  View Page</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="column col-md-4 webapp">
-            <div class="content">
-              <div class="project-img">
-                <img src="images/nexgen.png" alt="nexgen" />
-              </div>
-              <div class="content-details" id="panel-6">
-                <h4 class="card-title">
-                  Alkoot
-                </h4>
-                <p class="card-text">
-                  A web-application developed for a Healthcare company.
-                  <span class="animated">
-                    Alkoot wep app uses Bootstrap 4 for a mobile-first layout,
-                    with jQuery and javaScript for easy page
-                    manipulation..</span
-                  >
-                  <span class="animated">
-                    This layout was implemented in Angular JS to become a
-                    full-fledged application
-                  </span>
-                  <a
-                    href="javascript:void(0)"
-                    class="card-expand"
-                    data-item="panel-6"
-                    >more</a
-                  >
-                </p>
-                <ul class="technology-used">
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="HTML5"
-                  >
-                    <img src="images/icons/html5.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="CSS3"
-                  >
-                    <img src="images/icons/css.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="JavaScript"
-                  >
-                    <img src="images/icons/js.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="jQuery"
-                  >
-                    <img src="images/icons/jquery.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="Bootstrap 4"
-                  >
-                    <img src="images/icons/bootstrap.png" alt="" />
-                  </li>
-                </ul>
-                <a
-                  href="sites/Alkoot/dashboard.html"
-                  target="_blank"
-                  class="card-link"
-                  ><span class="mr-2"
-                    ><i class="fas fa-external-link-alt"></i
-                  ></span>
-                  View Page</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="column col-md-4 webapp">
-            <div class="content">
-              <div class="project-img">
-                <img src="images/nexgen.png" alt="nexgen" />
-              </div>
-              <div class="content-details" id="panel-5">
-                <h4 class="card-title">
-                  Intellithink
-                </h4>
-                <p class="card-text">
-                  A web-application designed and developed for a IOT company.
-                  <span class="animated">
-                    Intellithink wep app uses Bootstrap 3 for a mobile-first
-                    layout, with jQuery and javaScript for easy page
-                    manipulation..</span
-                  >
-                  <span class="animated">
-                    This layout was implemented in Angular 2 to become a
-                    full-fledged application
-                  </span>
-                  <a
-                    href="javascript:void(0)"
-                    class="card-expand"
-                    data-item="panel-5"
-                    >more</a
-                  >
-                </p>
-                <ul class="technology-used">
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="HTML5"
-                  >
-                    <img src="images/icons/html5.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="CSS3"
-                  >
-                    <img src="images/icons/css.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="JavaScript"
-                  >
-                    <img src="images/icons/js.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="jQuery"
-                  >
-                    <img src="images/icons/jquery.png" alt="" />
-                  </li>
-                  <li
-                    data-toggle="tooltip"
-                    data-placement="bottom"
-                    title="Bootstrap 3"
-                  >
-                    <img src="images/icons/bootstrap.png" alt="" />
-                  </li>
-                </ul>
-                <a
-                  href="sites/Intellithink-app/dashboard.html"
-                  target="_blank"
-                  class="card-link"
-                  ><span class="mr-2"
-                    ><i class="fas fa-external-link-alt"></i
-                  ></span>
-                  View Page</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- END GRID -->
         </div>
       </div>
     </section>
@@ -608,6 +749,19 @@
               return false;
             }
           }
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("ul.tabs li").click(function () {
+          var tab_id = $(this).attr("data-tab");
+
+          $("ul.tabs li").removeClass("current");
+          $(".tab-content").removeClass("current");
+
+          $(this).addClass("current");
+          $("#" + tab_id).addClass("current");
         });
       });
     </script>

@@ -10,7 +10,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color: #0a2463;
+  color: #1e1b18;
   background: #f8f9f9;
 }
 
@@ -103,7 +103,7 @@ body {
 /* filter */
 
 .portfolio {
-  padding: 60px 0;
+  padding: 0 0 60px 0;
   background: #fffaff;
 }
 
@@ -155,6 +155,11 @@ body {
   font-weight: 500;
   margin-right: 10px;
   border-radius: 0;
+  background: #f8f9f9;
+}
+
+.btn-filter:hover {
+  color: #d8315b;
 }
 
 .btn-filter.active {
@@ -291,4 +296,337 @@ body {
 .content-details.expand span {
   display: inline-block;
   animation-name: fadeIn;
+}
+
+/* tabs */
+
+ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+ul.tabs li {
+  background: #f8f9f9;
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+ul.tabs li:hover {
+  color: #d8315b;
+}
+
+ul.tabs li.current {
+  background: #d8315b;
+  font-weight: 500;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.current {
+  display: inherit;
+}
+
+.tab-link h1 {
+  margin-bottom: 0;
+  font-weight: 300;
+}
+ul.tabs li.current h1 {
+  margin-bottom: 0;
+  font-weight: 500 !important;
+  color: #ffffff;
+}
+
+/* skills */
+
+.skill-card {
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 20px;
+  background: #ffffff;
+}
+
+.skill-card2 {
+  padding: 20px;
+  transition: 0.3s all ease-in-out;
+}
+
+.skill-title {
+  font-weight: 600;
+}
+
+.skillBar {
+  width: 100%;
+  height: 35px;
+  margin: 35px 0;
+}
+
+.skill-content {
+  margin-left: 30px;
+}
+
+.skillArea {
+  width: 97%;
+  position: relative;
+  left: 11px;
+  top: 7px;
+  background: #f8f9f9;
+  height: 5px;
+}
+
+.skillName {
+  text-align: center;
+  font-size: 18px !important;
+  font-weight: 400;
+  margin: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.skill-HTML {
+  width: 95%;
+  height: 5px;
+  -webkit-animation: Animate-HTML 3s;
+  animation: Animate-HTML 3s;
+  background-color: #eb984e;
+  position: relative;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.skill-Sketch {
+  width: 95%;
+  height: 5px;
+  -webkit-animation: Animate-HTML 3s;
+  animation: Animate-HTML 3s;
+  background-color: #f4d03f;
+  position: relative;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.skill-CSS {
+  width: 95%;
+  height: 5px;
+  -webkit-animation: Animate-CSS 3s;
+  animation: Animate-CSS 3s;
+  background-color: #3498db;
+  position: relative;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.skill-sass {
+  width: 90%;
+  height: 5px;
+  -webkit-animation: Animate-sass 3s;
+  animation: Animate-sass 3s;
+  background-color: #fc66d1;
+  position: relative;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.skill-JS {
+  width: 80%;
+  height: 5px;
+  -webkit-animation: Animate-JS 3s;
+  animation: Animate-JS 3s;
+  background-color: #f4d03f;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+
+.skill-jquery {
+  width: 80%;
+  height: 5px;
+  -webkit-animation: Animate-JS 3s;
+  animation: Animate-JS 3s;
+  background-color: #566573;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+
+.skill-xd {
+  width: 80%;
+  height: 5px;
+  -webkit-animation: Animate-JS 3s;
+  animation: Animate-JS 3s;
+  background-color: #7d3c98;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+
+.skill-React {
+  width: 70%;
+  height: 5px;
+  -webkit-animation: Animate-React 3s;
+  animation: Animate-React 3s;
+  background-color: #2bd9ea;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+
+.skill-native {
+  width: 60%;
+  height: 5px;
+  -webkit-animation: Animate-native 3s;
+  animation: Animate-native 3s;
+  background-color: #2bd9ea;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+
+.skill-story {
+  width: 40%;
+  height: 5px;
+  -webkit-animation: Animate-story 3s;
+  animation: Animate-story 3s;
+  background-color: #ff4785;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+
+@-webkit-keyframes Animate-HTML {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+@keyframes Animate-HTML {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+@-webkit-keyframes Animate-CSS {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+@keyframes Animate-CSS {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+@-webkit-keyframes Animate-JS {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes Animate-JS {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes Animate-React {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes Animate-React {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes Animate-sass {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes Animate-sass {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes Animate-native {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes Animate-native {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes Animate-story {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes Animate-story {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
 }
