@@ -23,6 +23,12 @@ body {
   align-items: center;
 }
 
+.profile-img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+
 .main-title-lg {
   font-weight: 300;
   line-height: 72px;
@@ -386,7 +392,7 @@ ul.tabs li.current h1 {
 }
 
 .skill-HTML {
-  width: 95%;
+  width: 98%;
   height: 5px;
   -webkit-animation: Animate-HTML 3s;
   animation: Animate-HTML 3s;
@@ -397,11 +403,35 @@ ul.tabs li.current h1 {
   box-sizing: border-box;
 }
 
-.skill-Sketch {
+.skill-bootstrap {
   width: 95%;
   height: 5px;
   -webkit-animation: Animate-HTML 3s;
   animation: Animate-HTML 3s;
+  background-color: #673ab7;
+  position: relative;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.skill-mui {
+  width: 95%;
+  height: 5px;
+  -webkit-animation: Animate-HTML 3s;
+  animation: Animate-HTML 3s;
+  background-color: #0288d1;
+  position: relative;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.skill-Sketch {
+  width: 90%;
+  height: 5px;
+  -webkit-animation: Animate-Sketch 3s;
+  animation: Animate-Sketch 3s;
   background-color: #f4d03f;
   position: relative;
   float: left;
@@ -410,7 +440,7 @@ ul.tabs li.current h1 {
 }
 
 .skill-CSS {
-  width: 95%;
+  width: 98%;
   height: 5px;
   -webkit-animation: Animate-CSS 3s;
   animation: Animate-CSS 3s;
@@ -469,6 +499,18 @@ ul.tabs li.current h1 {
   float: left;
 }
 
+.skill-inv {
+  width: 80%;
+  height: 5px;
+  -webkit-animation: Animate-JS 3s;
+  animation: Animate-JS 3s;
+  background-color: #dc395f;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+
 .skill-React {
   width: 70%;
   height: 5px;
@@ -510,7 +552,7 @@ ul.tabs li.current h1 {
     width: 0;
   }
   to {
-    width: 95%;
+    width: 98%;
   }
 }
 
@@ -519,7 +561,25 @@ ul.tabs li.current h1 {
     width: 0;
   }
   to {
-    width: 95%;
+    width: 98%;
+  }
+}
+
+@-webkit-keyframes Animate-Sketch {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes Animate-Sketch {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
   }
 }
 
@@ -528,7 +588,7 @@ ul.tabs li.current h1 {
     width: 0;
   }
   to {
-    width: 95%;
+    width: 98%;
   }
 }
 
@@ -537,7 +597,7 @@ ul.tabs li.current h1 {
     width: 0;
   }
   to {
-    width: 95%;
+    width: 98%;
   }
 }
 
@@ -629,4 +689,95 @@ ul.tabs li.current h1 {
   to {
     width: 40%;
   }
+}
+
+/* social */
+
+[class^="sbar-"]:before {
+  font-family: "FontAwesome", sans-serif;
+}
+
+#social-sidebar {
+  right: 0;
+  position: fixed;
+  top: 40%;
+  padding-left: 0;
+  list-style: none;
+  animation-name: fadeInRight;
+  z-index: 9;
+}
+
+#social-sidebar a {
+  background: #d8315b;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  height: 50px;
+  width: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+#social-sidebar a:hover span {
+  right: 120%;
+  opacity: 1;
+}
+
+#social-sidebar a span {
+  font: 12px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  line-height: 24px;
+  right: -100%;
+  margin-top: -16px;
+  opacity: 0;
+  width: 100px;
+  padding: 4px 8px;
+  position: absolute;
+  transition: opacity 0.3s, left 0.4s;
+  top: 50%;
+}
+
+#social-sidebar a span:before {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  right: -4px;
+  margin-top: -4px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+#social-sidebar a[class*="gplus"]:hover,
+#social-sidebar a[class*="gplus"] span,
+#social-sidebar a[class*="gplus"] span:before {
+  background: #e34429;
+}
+
+#social-sidebar a[class*="paper-plane"]:hover,
+#social-sidebar a[class*="paper-plane"] span,
+#social-sidebar a[class*="paper-plane"] span:before {
+  background: #8a0707;
+}
+
+#social-sidebar a[class*="instagrem"]:hover,
+#social-sidebar a[class*="instagrem"] span,
+#social-sidebar a[class*="instagrem"] span:before {
+  background: #2e5e86;
+}
+
+#social-sidebar a[class*="linkedin"]:hover,
+#social-sidebar a[class*="linkedin"] span,
+#social-sidebar a[class*="linkedin"] span:before {
+  background: #0e76a8;
+}
+
+#social-sidebar a[class*="fill in icon here"]:hover,
+#social-sidebar a[class*="fill in icon here"] span,
+#social-sidebar a[class*="fill in icon here"] span:before {
+  background: #6bb130;
 }
