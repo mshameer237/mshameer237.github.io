@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>filter_btn</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.13836292,0.230769231 C0.676824456,0.230769231 0.46143984,0.753846154 0.738362917,1.09230769 L6.70759369,8.07692308 C6.89220907,8.29230769 6.98451676,8.6 6.98451676,8.87692308 L6.98451676,13.3076923 C6.98451676,13.5538462 7.23067061,13.7692308 7.47682446,13.7692308 L8.39990138,13.7692308 C8.64605522,13.7692308 8.83067061,13.5538462 8.83067061,13.3076923 L8.83067061,8.87692308 C8.83067061,8.56923077 8.95374753,8.29230769 9.16913215,8.07692308 L15.1999014,1.09230769 C15.4768245,0.753846154 15.2614398,0.230769231 14.7999014,0.230769231 L1.13836292,0.230769231 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Button-Dropdown_Measure" transform="translate(-656.000000, -153.000000)">
+            <g id="filter_btn" transform="translate(656.000000, 153.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#54698D" opacity="0.5" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

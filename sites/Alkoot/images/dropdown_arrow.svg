@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.400000006">
+        <g id="Input---default-Copy-6" transform="translate(-252.000000, -34.000000)" fill="#535353">
+            <g id="picklist" transform="translate(0.000000, 21.000000)">
+                <path d="M252.329034,13 L261.284426,13 C261.537403,13 261.714487,13.325 261.512105,13.55 L257.1356,18.85 C256.983814,19.05 256.654943,19.05 256.503157,18.85 L252.076056,13.55 C251.898972,13.325 252.050759,13 252.329034,13" id="down"></path>
+            </g>
+        </g>
+    </g>
+</svg>

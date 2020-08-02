@@ -1,0 +1,9 @@
+
+
+$('.collapse-element').click(function () {
+   $(this).find('i').toggleClass('fa-chevron-down fa-chevron-right')
+});
+
+
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="15px" viewBox="0 0 13 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Selfie_detail_page_with_Account_opening_form" transform="translate(-392.000000, -537.000000)" fill="#FFFFFF">
+            <g id="Group-4" transform="translate(248.000000, 521.000000)">
+                <path d="M144.540294,30.7114706 C144.490294,30.7114706 144.440294,30.6988235 144.395294,30.6732353 C144.303235,30.6208824 144.246176,30.5232353 144.246176,30.4173529 L144.246176,16.3105882 C144.246176,16.2047059 144.302941,16.1070588 144.395294,16.0547059 C144.487647,16.0026471 144.600294,16.0038235 144.691471,16.0582353 L156.464118,23.1117647 C156.552941,23.165 156.607059,23.2605882 156.607059,23.3641176 C156.607059,23.4676471 156.552647,23.5632353 156.464118,23.6164706 L144.691176,30.6697059 C144.644706,30.6976471 144.592647,30.7114706 144.540294,30.7114706 Z M144.834412,16.8297059 L144.834412,29.8985294 L155.740882,23.3641176 L144.834412,16.8297059 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

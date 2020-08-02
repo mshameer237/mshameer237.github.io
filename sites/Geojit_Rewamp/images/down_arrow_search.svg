@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="20px" viewBox="0 0 13 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>down_arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="symbol-search" transform="translate(-420.000000, -151.000000)" stroke="#979797">
+            <g id="down_arrow" transform="translate(420.000000, 152.000000)">
+                <path d="M6.5,0.375 L6.5,16.8920367" id="Line"></path>
+                <path d="M0.751974914,11.9875139 L6.5,17.625" id="Line"></path>
+                <path d="M6.86962197,11.9875139 L12.6176471,17.625" id="Line" transform="translate(9.558824, 14.625000) scale(-1, 1) translate(-9.558824, -14.625000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

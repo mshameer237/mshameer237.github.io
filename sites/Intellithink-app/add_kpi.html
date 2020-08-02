@@ -1,0 +1,623 @@
+<!doctype html>
+<html class="no-js" lang="">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Intellithink</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/css-wrap.css">
+      <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.css'>
+      <script src="https://use.fontawesome.com/99347ac47f.js"></script>
+   </head>
+   <body>
+      <!-- Header -->
+      <section class="custom-header">
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt="logo"></a>
+               </div>
+               <a href="dashboard.html" class="home"><img src="images/Home.svg" alt="home"></a>
+               <ul class="nav navbar-nav center-menu">
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ASSETS <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="asset_list.html">Asset List</a></li>
+                        <li><a href="fmea.html">Reliability</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MAINTENANCE <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="work_order.html">Work Order</a></li>
+                        <li><a href="wo_generate.html">Generate WO</a></li>
+                        <li><a href="planning.html">Planning</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PURCHASING <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="purchase_list.html">Purchase List</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">KPI <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="kpi_dashboard.html">Dashboard</a></li>
+                        <li><a href="kpi_task.html">Configuration</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="right-menus">
+                  <div class="button-menu" role="group" aria-label="...">
+                     <ul class="nav navbar-nav">
+                        <li><a href="report.html">Reports</a></li>
+                        <li><a href="call_center.html">Call Center</a></li>
+                        <li><a href="contracts.html">Contracts</a></li>
+                     </ul>
+                  </div>
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/settings.svg" alt=""></a>
+                           <ul class="dropdown-menu settings-drop">
+                              <li><a href="customer_list.html">Customers</a></li>
+                              <li><a href="user_role.html">Users</a></li>
+                              <li><a href="system_settings.html">System</a></li>
+                           </ul>
+                        </li>
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                           <div class="dropdown-menu message-drop">
+                              <div class="panel-head">
+                                 <div class="msg-title pull-left">
+                                    <h5>Your Messages</h5>
+                                 </div>
+                                 <div class="msg-action pull-right"><a href="#">Compose</a><a href="messages.html">View All</a></div>
+                                 <div class="clear"></div>
+                              </div>
+                              <div class="msg-list">
+                                 <ul>
+                                    <li>
+                                       <a href="messages.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Hi User, Lorem ipsum dolor sit amet, consectetur a...</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="messages.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Hi User, Lorem ipsum dolor sit amet, consectetur a...</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="msg-more"><a href="#">See All Messages</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa-stack fa-2x has-badge" data-count="7"><i class="fa fa-bell" aria-hidden="true"></i></span></a>
+                           <div class="dropdown-menu notif-drop">
+                              <div class="panel-head">
+                                 <div class="msg-title notif-title">
+                                    <h5>Notification<span class="fa-stack fa-3x has-badge large-badge" data-count="7"></span></h5>
+                                 </div>
+                                 <div class="clear"></div>
+                              </div>
+                              <div class="msg-list">
+                                 <ul>
+                                    <li>
+                                       <a href="#">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>New WO Created</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="request-approve.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Request Approval</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="msg-more"><a href="#">See All Notification</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="dropdown profile-menu">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/profile.png" alt=""> </a>
+                           <ul class="dropdown-menu settings-drop">
+                              <li><a href="password_reset.html">Password Reset</a></li>
+                              <li><a href="settings.html">Settings</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="login.html">Logout</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+         </nav>
+      </section>
+      <!-- /header -->
+      <section class="add-customer">
+         <div class="container-fluid">
+            <div class="pagetop">
+               <h3 class="page-title">Add KPI<span class="badge badge-cname">146909805</span></h3>
+               <div class="page-breadcrumb">
+                  <ol class="breadcrumb">
+                     <li><a href="contracts.html">Contracts</a></li>
+                     <li class="active">Add KPI</li>
+                  </ol>
+               </div>
+               <div class="clear"></div>
+            </div>
+            <div class="vd-card">
+               <div class="vd-card-body">
+                  <div class="row">
+                     <div class="col-md-3">
+                        <div class="form-group">
+                           <label for="text" class="required">*KPI Description</label>
+                           <input type="text" class="form-control">
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="form-group">
+                           <label for="text" >Target</label>
+                           <input type="text" class="form-control">
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="form-group">
+                           <label for="text">Frequency of Measurement</label>
+                           <select class="form-control" id="Admission">
+                              <option>Status</option>
+                              <option>Status</option>
+                              <option>Status</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="form-group">
+                           <label for="text">Unit of Measure</label>
+                           <select class="form-control" id="Admission">
+                              <option>Select</option>
+                              <option>Select</option>
+                              <option>Select</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-3">
+                        <div class="form-group">
+                           <label for="text" >Weightage</label>
+                           <input type="text" class="form-control">
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="form-group">
+                           <label for="text" >User In Charge</label>
+                           <input type="text" class="form-control">
+                        </div>
+                     </div>
+                     <div class="col-md-5">
+                        <div class="form-group">
+                           <label for="text" class="label-radio">
+                              Calculation Criteria 
+                              <span class="pull-right">
+                                 <div class="radio radio-option">
+                                    <input id="radiob" name="radio" type="radio">
+                           <label for="radiob" class="radio-label">Bandwise Score</label>
+                           </div>
+                           <div class="radio radio-option">
+                           <input id="radioc" name="radio" type="radio">
+                           <label for="radioc" class="radio-label">Pro-Rata</label>
+                           </div></span></label>
+                           <div class="row">
+                              <div class="col-md-2">
+                                 <select class="form-control" id="Admission">
+                                    <option><</option>
+                                    <option>></option>
+                                 </select>
+                              </div>
+                              <div class="col-md-2"> <input type="text" class="form-control"></div>
+                              <div class="col-md-2">
+                                 <select class="form-control" id="Admission">
+                                    <option><</option>
+                                    <option>></option>
+                                 </select>
+                              </div>
+                              <div class="col-md-2"><input type="text" class="form-control"></div>
+                              <div class="col-md-1" style="text-align: center;">=</div>
+                              <div class="col-md-2"><input type="text" class="form-control"></div>
+                              <div class="col-md-1"><a href="#" class="btn btn-add" style="margin-top: 1px;" id="add-criteria"><i class="fa fa-plus" aria-hidden="true"></i></a></div>
+                           </div>
+                           <div class="row" id="new-criteria">
+                              <div class="col-md-2">
+                                 <select class="form-control" id="Admission">
+                                    <option><</option>
+                                    <option>></option>
+                                 </select>
+                              </div>
+                              <div class="col-md-2"> <input type="text" class="form-control"></div>
+                              <div class="col-md-2">
+                                 <select class="form-control" id="Admission">
+                                    <option><</option>
+                                    <option>></option>
+                                 </select>
+                              </div>
+                              <div class="col-md-2"><input type="text" class="form-control"></div>
+                              <div class="col-md-1" style="text-align: center;">=</div>
+                              <div class="col-md-2"><input type="text" class="form-control"></div>
+                              <div class="col-md-1">
+                                 <div class="dropdown table-drop">
+                                    <a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="images/dotted_menu.svg" alt=""></a>
+                                    <ul class="dropdown-menu">
+                                       <li><a href="#"><span class="drop-icon"><i class="fa fa-trash" aria-hidden="true"></i></span>Delete</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-3">
+                        <div class="form-group">
+                           <label for="text" >Score Card</label>
+                           <input type="text" class="form-control">
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="form-group">
+                           <label for="text" >Payment Calculation Score</label>
+                           <input type="text" class="form-control">
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="form-group">
+                           <label for="text" >Penalty / Bonus</label>
+                           <input type="text" class="form-control">
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="add-form">
+                           <button class="btn btn-browse" >Add
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="list-table">
+               <div class="vd-card">
+                  <div class="table-head">
+                     <div class="table-title">
+                        <h3 class="page-title">KPI</h3>
+                     </div>
+                     <div class="table-function">
+                        <div class="vd-filter-dropdown-wrap">
+                           <button type="button" class="vd-filter-btn">
+                           Sites
+                           <img src="images/filter.svg" alt="filter_btn">
+                           </button>
+                           <div class="vd-filter-dropdown">
+                              <div class="vd-form-control">
+                                 <div class="vd-form-control has-icon search-drop">
+                                    <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search" id="Search">
+                                    <div class="input-icon">
+                                       <img src="images/lens.svg" alt="lens">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="vd-form-control">
+                                 <input type="checkbox" id="checkbox-1-1" class="ui-checkbox" /><label for="checkbox-1-1">
+                                 Apollo Hospital, Delhi</label>
+                              </div>
+                              <div class="vd-form-control">
+                                 <input type="checkbox" id="checkbox1" class="ui-checkbox" /><label for="checkbox1">
+                                 Apollo Hospital, Mumbai</label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="vd-filter-dropdown-wrap">
+                           <button type="button" class="vd-filter-btn">
+                           Functional Location
+                           <img src="images/filter.svg" alt="filter_btn">
+                           </button>
+                           <div class="vd-filter-dropdown">
+                              <div class="vd-form-control">
+                                 <div class="vd-form-control has-icon search-drop">
+                                    <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search" id="Search">
+                                    <div class="input-icon">
+                                       <img src="images/lens.svg" alt="lens">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="vd-form-control">
+                                 <input type="checkbox" id="checkbox-1-1" class="ui-checkbox" /><label for="checkbox-1-1">Cardiology</label>
+                              </div>
+                              <div class="vd-form-control">
+                                 <input type="checkbox" id="checkbox1" class="ui-checkbox" /><label for="checkbox1">Oncology</label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="vd-filter-dropdown-wrap">
+                           <button type="button" class="vd-filter-btn">
+                           Facility
+                           <img src="images/filter.svg" alt="filter_btn">
+                           </button>
+                           <div class="vd-filter-dropdown">
+                              <div class="vd-form-control">
+                                 <div class="vd-form-control has-icon search-drop">
+                                    <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search" id="Search">
+                                    <div class="input-icon">
+                                       <img src="images/lens.svg" alt="lens">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="vd-form-control">
+                                 <input type="checkbox" id="checkbox-1-1" class="ui-checkbox" /><label for="checkbox-1-1">Cardiology</label>
+                              </div>
+                              <div class="vd-form-control">
+                                 <input type="checkbox" id="checkbox1" class="ui-checkbox" /><label for="checkbox1">Oncology</label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="vd-filter-dropdown-wrap">
+                           <button type="button" class="vd-filter-btn">
+                           Equipments
+                           <img src="images/filter.svg" alt="filter_btn">
+                           </button>
+                           <div class="vd-filter-dropdown">
+                              <div class="vd-form-control">
+                                 <div class="vd-form-control has-icon search-drop">
+                                    <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search" id="Search">
+                                    <div class="input-icon">
+                                       <img src="images/lens.svg" alt="lens">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="vd-form-control">
+                                 <input type="checkbox" id="checkbox-1-1" class="ui-checkbox" /><label for="checkbox-1-1">Cardiology</label>
+                              </div>
+                              <div class="vd-form-control">
+                                 <input type="checkbox" id="checkbox1" class="ui-checkbox" /><label for="checkbox1">Oncology</label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="vd-filter-dropdown-wrap">
+                           <a href="#" class="file-icn" title="" data-original-title="Export Excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="search">
+                           <div class="vd-form-control has-icon">
+                              <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search" id="Search">
+                              <div class="input-icon">
+                                 <img src="images/lens.svg" alt="lens">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="clear"></div>
+                  </div>
+                  <div class="customer-list-table">
+                     <table class="table">
+                        <thead>
+                           <tr>
+                              <th><input type="checkbox" id="checkboxa" class="ui-checkbox" /><label for="checkboxa"></label></th>
+                              <th>KPI Desc</th>
+                              <th>Target</th>
+                              <th>Frequency of Measurement</th>
+                              <th>Unit of Measure</th>
+                              <th>Weightage</th>
+                              <th>User In charge</th>
+                              <th>Scorecard</th>
+                              <th>Payment Calculation Score</th>
+                              <th>Penalty / Bonus</th>
+                              <th>&nbsp;</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td><input type="checkbox" id="checkboxb" class="ui-checkbox" /><label for="checkboxb"></label></td>
+                              <td><a href="#">KPI1</a></td>
+                              <td>30</td>
+                              <td>Yearly</td>
+                              <td>Unit</td>
+                              <td>30%</td>
+                              <td>Ashok Kumar</td>
+                              <td>30</td>
+                              <td>24.70</td>
+                              <td>100</td>
+                              <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                           </tr>
+                           <tr>
+                              <td><input type="checkbox" id="checkboxb" class="ui-checkbox" /><label for="checkboxb"></label></td>
+                              <td><a href="#">KPI1</a></td>
+                              <td>30</td>
+                              <td>Yearly</td>
+                              <td>Unit</td>
+                              <td>30%</td>
+                              <td>Ashok Kumar</td>
+                              <td>30</td>
+                              <td>24.70</td>
+                              <td>100</td>
+                              <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                           </tr>
+                           <tr>
+                              <td><input type="checkbox" id="checkboxb" class="ui-checkbox" /><label for="checkboxb"></label></td>
+                              <td><a href="#">KPI1</a></td>
+                              <td>30</td>
+                              <td>Yearly</td>
+                              <td>Unit</td>
+                              <td>30%</td>
+                              <td>Ashok Kumar</td>
+                              <td>30</td>
+                              <td>24.70</td>
+                              <td>100</td>
+                              <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                           </tr>
+                           <tr>
+                              <td><input type="checkbox" id="checkboxb" class="ui-checkbox" /><label for="checkboxb"></label></td>
+                              <td><a href="#">KPI1</a></td>
+                              <td>30</td>
+                              <td>Yearly</td>
+                              <td>Unit</td>
+                              <td>30%</td>
+                              <td>Ashok Kumar</td>
+                              <td>30</td>
+                              <td>24.70</td>
+                              <td>100</td>
+                              <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <div class="table-footer">
+                        <div class="custom-pagination">
+                           <nav class="vd-pagination-wrapper">
+                              <ul class="pagination">
+                                 <li class="page-item">
+                                    <a class="page-link prev" href="#">
+                                       <svg width="8px" height="11px" viewBox="0 0 8 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                          <defs>
+                                             <path d="M4.44151051,10.8788462 C4.27455991,11.0403846 3.99630892,11.0403846 3.82935832,10.8788462 L-1.87478705,5.30576923 C-2.04173765,5.14423077 -2.04173765,4.875 -1.87478705,4.71346154 L-1.26263487,4.12115385 C-1.09568427,3.95961538 -0.817433277,3.95961538 -0.65048268,4.12115385 L3.82935832,8.50961538 C3.99630892,8.67115385 4.27455991,8.67115385 4.44151051,8.50961538 L8.9213515,4.14807692 C9.0883021,3.98653846 9.36655309,3.98653846 9.53350369,4.14807692 L10.1456559,4.74038462 C10.2847814,4.90192308 10.2847814,5.14423077 10.1456559,5.30576923 L4.44151051,10.8788462 Z" id="page-link_left_path-2"></path>
+                                          </defs>
+                                          <g id="left_Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                             <g id="Group-2-Copy" transform="translate(0.000000, -1.000000)">
+                                                <mask id="page-link__left_mask-2" fill="white">
+                                                   <use xlink:href="#page-link_left_path-2"></use>
+                                                </mask>
+                                                <use id="page-link__left_Mask-Copy" fill="#415072" class="pagination_icon" transform="translate(4.125000, 7.500000) rotate(90.000000) translate(-4.125000, -7.500000) " xlink:href="#page-link_left_path-2"></use>
+                                             </g>
+                                          </g>
+                                       </svg>
+                                       <span>Previous</span>
+                                    </a>
+                                 </li>
+                                 <li class="page-item">
+                                    <a class="page-link next" href="#">
+                                       <span>Next</span>
+                                       <svg width="8px" height="11px" viewBox="0 0 8 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                          <defs>
+                                             <path d="M74.4415105,10.8788462 C74.2745599,11.0403846 73.9963089,11.0403846 73.8293583,10.8788462 L68.1252129,5.30576923 C67.9582624,5.14423077 67.9582624,4.875 68.1252129,4.71346154 L68.7373651,4.12115385 C68.9043157,3.95961538 69.1825667,3.95961538 69.3495173,4.12115385 L73.8293583,8.50961538 C73.9963089,8.67115385 74.2745599,8.67115385 74.4415105,8.50961538 L78.9213515,4.14807692 C79.0883021,3.98653846 79.3665531,3.98653846 79.5335037,4.14807692 L80.1456559,4.74038462 C80.2847814,4.90192308 80.2847814,5.14423077 80.1456559,5.30576923 L74.4415105,10.8788462 Z" id="Next_path-3"></path>
+                                          </defs>
+                                          <g id="Next_Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                             <g id="Next_Page_Group-2-Copy" transform="translate(-70.000000, -1.000000)">
+                                                <mask id="mask-2" fill="white">
+                                                   <use xlink:href="#Next_path-3"></use>
+                                                </mask>
+                                                <use id="Next_Mask" fill="#415072" class="pagination_icon" transform="translate(74.125000, 7.500000) scale(-1, 1) rotate(90.000000) translate(-74.125000, -7.500000) " xlink:href="#Next_path-3"></use>
+                                             </g>
+                                          </g>
+                                       </svg>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </div>
+                        <div class="clear"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <p>© Copyright - Intellithink Industrial IOT Labs Private Limited</p>
+      </footer>
+      <!-- scripts -->
+      <script src="js/jquery-3.1.1.min.js"></script>
+      <script src="js/owl.carousel.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/moment.js"></script>
+      <script src="js/bootstrap-datetimepicker.js"></script>
+      <script src='https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.min.js'></script>
+      <script>
+         $(document).ready(
+         function(){
+         $("#add-contact").click(function () {
+            $("#new-contact").show();
+         });
+         $("#add-part").click(function () {
+            $("#new-part").show();
+         });
+         $("#add-criteria").click(function () {
+            $("#new-criteria").show();
+         });
+         
+         });
+      </script>
+      <script>
+         $('.vd-filter-btn').click(function() {
+          $(this).closest('.vd-filter-dropdown-wrap ').find('.vd-filter-dropdown').fadeToggle();
+         
+         });
+      </script>
+      <script>
+         $('#datetimepicker1').datetimepicker({
+         
+          defaultDate: new Date(),
+          showClose: true,
+          // format: 'DD/MM/YYYY',
+          keepOpen: false,
+          icons: {
+              time: "datepicker-icon time-icon",
+              date: "datepicker-icon date-icon",
+              up: "datepicker-icon up-icon",
+              down: "datepicker-icon down-icon",
+              previous: 'datepicker-icon prev-icon',
+              next: 'datepicker-icon next-icon',
+              close: 'datepicker-icon close-icon'
+          }
+         
+         });
+         $('#datetimepicker2').datetimepicker({
+         
+          defaultDate: new Date(),
+          showClose: true,
+          // format: 'DD/MM/YYYY',
+          keepOpen: false,
+          icons: {
+              time: "datepicker-icon time-icon",
+              date: "datepicker-icon date-icon",
+              up: "datepicker-icon up-icon",
+              down: "datepicker-icon down-icon",
+              previous: 'datepicker-icon prev-icon',
+              next: 'datepicker-icon next-icon',
+              close: 'datepicker-icon close-icon'
+          }
+         
+         });
+      </script>
+   </body>
+</html>

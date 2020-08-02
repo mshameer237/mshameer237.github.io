@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="15px" viewBox="0 0 8 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>delete - MaterialIcons-Regular</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Edit/Delete" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-13.000000, -42.000000)">
+        <g id="Group-2" fill="#747474">
+            <path d="M20.8203125,43.0510958 L20.8203125,44.1795302 L13,44.1795302 L13,43.0510958 L14.9419568,43.0510958 L15.5192953,42.5 L18.3010172,42.5 L18.8783557,43.0510958 L20.8203125,43.0510958 Z M13.5510958,51.4487469 L13.5510958,44.730626 L20.2692167,44.730626 L20.2692167,51.4487469 C20.2692167,51.7461651 20.1554996,52.0085891 19.9280621,52.2360266 C19.7006246,52.4634642 19.4382006,52.5771812 19.1407823,52.5771812 L14.6795302,52.5771812 C14.3821119,52.5771812 14.1196879,52.4634642 13.8922504,52.2360266 C13.6648129,52.0085891 13.5510958,51.7461651 13.5510958,51.4487469 Z" id="delete---MaterialIcons-Regular"></path>
+        </g>
+    </g>
+</svg>

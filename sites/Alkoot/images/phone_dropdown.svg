@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="5px" viewBox="0 0 9 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-18" transform="translate(-34.000000, -14.000000)" fill="#54698D">
+            <g id="Input---default-Copy-9">
+                <path d="M38.6010789,18.9134615 C38.4818285,19.0288462 38.2830778,19.0288462 38.1638274,18.9134615 L34.0894378,14.9326923 C33.9701874,14.8173077 33.9701874,14.625 34.0894378,14.5096154 L34.5266894,14.0865385 C34.6459398,13.9711538 34.8446905,13.9711538 34.9639409,14.0865385 L38.1638274,17.2211538 C38.2830778,17.3365385 38.4818285,17.3365385 38.6010789,17.2211538 L41.8009654,14.1057692 C41.9202158,13.9903846 42.1189665,13.9903846 42.2382169,14.1057692 L42.6754685,14.5288462 C42.7748438,14.6442308 42.7748438,14.8173077 42.6754685,14.9326923 L38.6010789,18.9134615 Z" id="Mask"></path>
+            </g>
+        </g>
+    </g>
+</svg>

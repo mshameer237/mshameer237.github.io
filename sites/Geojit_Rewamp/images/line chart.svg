@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="261px" height="105px" viewBox="0 0 261 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>line chart</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" fill-opacity="0" stroke-linejoin="round">
+        <g id="Home-page_member" transform="translate(-972.000000, -820.000000)" stroke="#FFFFFF" stroke-width="2" fill="#D8D8D8">
+            <polyline id="line-chart" points="973 919.052113 995.225705 909.081976 1010.08056 924 1030.80153 911.355262 1056.6739 915.926099 1072.26765 896.307607 1082.90046 898.246961 1099.71687 885.963249 1107.38484 892.428899 1117.53328 885.738298 1128.38874 902.091586 1138.27937 859.848432 1150.16999 852.70452 1166.72859 821 1179.32234 875.298506 1188.02546 852.70452 1199.13874 863.018202 1208.77156 843.17135 1231.70124 836.899977"></polyline>
+        </g>
+    </g>
+</svg>

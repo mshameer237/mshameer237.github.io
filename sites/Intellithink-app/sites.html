@@ -1,0 +1,755 @@
+<!doctype html>
+<html class="no-js" lang="">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Intellithink</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/css-wrap.css">
+      <script src="https://use.fontawesome.com/99347ac47f.js"></script>
+   </head>
+   <body>
+      <!-- Header -->
+      <section class="custom-header">
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt="logo"></a>
+               </div>
+               <a href="dashboard.html" class="home"><img src="images/Home.svg" alt="home"></a>
+               <ul class="nav navbar-nav center-menu">
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ASSETS <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="asset_list.html">Asset List</a></li>
+                        <li><a href="fmea.html">Reliability</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MAINTENANCE <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="work_order.html">Work Order</a></li>
+                        <li><a href="wo_generate.html">Generate WO</a></li>
+                        <li><a href="planning.html">Planning</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PURCHASING <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="purchase_list.html">Purchase List</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">KPI <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="kpi_dashboard.html">Dashboard</a></li>
+                        <li><a href="kpi_task.html">Configuration</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="right-menus">
+                  <div class="button-menu" role="group" aria-label="...">
+                     <ul class="nav navbar-nav">
+                        <li><a href="report.html">Reports</a></li>
+                        <li><a href="call_center.html">Call Center</a></li>
+                        <li><a href="contracts.html">Contracts</a></li>
+                     </ul>
+                  </div>
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/settings.svg" alt=""></a>
+                           <ul class="dropdown-menu settings-drop">
+                              <li><a href="customer_list.html">Customers</a></li>
+                              <li><a href="user_role.html">Users</a></li>
+                              <li><a href="system_settings.html">System</a></li>
+                           </ul>
+                        </li>
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                           <div class="dropdown-menu message-drop">
+                              <div class="panel-head">
+                                 <div class="msg-title pull-left">
+                                    <h5>Your Messages</h5>
+                                 </div>
+                                 <div class="msg-action pull-right"><a href="#">Compose</a><a href="messages.html">View All</a></div>
+                                 <div class="clear"></div>
+                              </div>
+                              <div class="msg-list">
+                                 <ul>
+                                    <li>
+                                       <a href="messages.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Hi User, Lorem ipsum dolor sit amet, consectetur a...</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="messages.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Hi User, Lorem ipsum dolor sit amet, consectetur a...</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="msg-more"><a href="#">See All Messages</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa-stack fa-2x has-badge" data-count="7"><i class="fa fa-bell" aria-hidden="true"></i></span></a>
+                           <div class="dropdown-menu notif-drop">
+                              <div class="panel-head">
+                                 <div class="msg-title notif-title">
+                                    <h5>Notification<span class="fa-stack fa-3x has-badge large-badge" data-count="7"></span></h5>
+                                 </div>
+                                 <div class="clear"></div>
+                              </div>
+                              <div class="msg-list">
+                                 <ul>
+                                    <li>
+                                       <a href="#">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>New WO Created</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="request-approve.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Request Approval</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="msg-more"><a href="#">See All Notification</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="dropdown profile-menu">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/profile.png" alt=""> </a>
+                           <ul class="dropdown-menu settings-drop">
+                              <li><a href="password_reset.html">Password Reset</a></li>
+                              <li><a href="settings.html">Settings</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="login.html">Logout</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+         </nav>
+      </section>
+      <!-- /header -->
+      <!--   content -->
+      <section class="add-customer">
+         <div class="container-fluid">
+            <!-- page-head -->
+            <div class="pagetop">
+               
+               <div class="page-head">
+                  <h3 class="page-title">Sites / Facilities<span class="badge badge-cname">Hyundai</span></h3>
+               </div>
+               <div class="page-breadcrumb">
+                  
+                  <ol class="breadcrumb">
+                     <li><a href="customer_list.html">Customer</a></li>
+                     <li><a href="add_customers.html">Add Customer</a></li>
+                     <li class="active">Sites</li>
+                  </ol>
+               </div>
+               <div class="clear"></div>
+            </div>
+            <!-- //page-head -->
+            <!-- forms -->
+            <div class="general-forms">
+               <div class="vd-vertical-pills">
+                  <div class="vd-vertical-pills-menu">
+                     <ul class="nav nav-pills" id="v-pills-tab" role="tablist">
+                        <li>
+                           <a class="nav-link "  href="add_customers.html" >General</a>
+                        </li>
+                        <li>
+                           <a class="nav-link active"  href="sites.html" >Sites (80)</a>
+                        </li>
+                        <li>
+                           <a class="nav-link "  href="files.html">Files</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="vd-vertical-pills-content">
+                     <div class="site-cards">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="vd-card vd-card-box">
+                                 <div class="vd-card-body">
+                                    <div class="card-box">
+                                       <div class="card-top">
+                                          <div class="card-title">
+                                             <div class="card-name">
+                                                <h5><span class="card-icn"><img src="images/sites_icon.svg" alt=""></span>Sites</h5>
+                                                <div class="card-info"><i class="fa fa-info-circle" aria-hidden="true"  title="Lorem ipsum"></i></div>
+                                             </div>
+                                          </div>
+                                          <div class="card-fn">
+                                             <div class="edit-card">
+                                                <a href="#" data-toggle="modal" data-target="#callerdetail"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                             </div>
+                                          </div>
+                                          <div class="clear"></div>
+                                       </div>
+                                       <div class="card-search">
+                                          <div class="vd-form-control has-icon">
+                                             <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search Sites" id="Search">
+                                             <div class="input-icon">
+                                                <img src="images/lens.svg" alt="lens">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="search-list scrollbox">
+                                          <ul class="cd-list site-list">
+                                             <li class="active"><a href="#" class="list-name">Apollo Hospital, Delhi</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#callerdetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                             <li><a href="#" class="list-name">Apollo Hospital, Chennai</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#callerdetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                             <li><a href="#" class="list-name">Apollo Hospital, Mumbai</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#callerdetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                             <li><a href="#" class="list-name">Apollo Hospital, Chennai</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#callerdetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                             <li><a href="#" class="list-name">Apollo Hospital, Mumbai</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#callerdetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                             <li><a href="#" class="list-name">Apollo Hospital, Chennai</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#callerdetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                             <li><a href="#" class="list-name">Apollo Hospital, Mumbai</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#callerdetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                             <li><a href="#" class="list-name">Apollo Hospital, Mumbai</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#callerdetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                             <li><a href="#" class="list-name">Apollo Hospital, Chennai</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#callerdetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                             <li><a href="#" class="list-name">Apollo Hospital, Mumbai</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#callerdetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vd-card vd-card-box">
+                                 <div class="vd-card-body">
+                                    <div class="card-box">
+                                       <div class="card-top">
+                                          <div class="card-title">
+                                             <div class="card-name">
+                                                <h5><span class="card-icn"><img src="images/functional_icon.svg" alt=""></span>Functional Locations</h5>
+                                                <div class="card-info"><i class="fa fa-info-circle" aria-hidden="true"  title="Lorem ipsum"></i></div>
+                                             </div>
+                                          </div>
+                                          <div class="card-fn">
+                                             <div class="edit-card">
+                                                <a href="#" data-toggle="modal" data-target="#fndetail"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                             </div>
+                                          </div>
+                                          <div class="clear"></div>
+                                       </div>
+                                       <div class="card-search">
+                                          <div class="vd-form-control has-icon">
+                                             <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search Functional Locations" id="Search">
+                                             <div class="input-icon">
+                                                <img src="images/lens.svg" alt="lens">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="search-list scrollbox">
+                                          <ul class="cd-list dept-list">
+                                             <li><a href="#" class="list-name">Cardiology</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#fndetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                             <li class="active"><a href="#" class="list-name">Oncology</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#fndetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vd-card vd-card-box">
+                                 <div class="vd-card-body">
+                                    <div class="card-box">
+                                       <div class="card-top">
+                                          <div class="card-title">
+                                             <div class="card-name">
+                                                <h5><span class="card-icn"><img src="images/facility_icon.svg" alt=""></span>Facilities</h5>
+                                                <div class="card-info"><i class="fa fa-info-circle" aria-hidden="true"  title="Lorem ipsum"></i></div>
+                                             </div>
+                                          </div>
+                                          <div class="card-fn">
+                                             <div class="edit-card">
+                                                <a href="#"  data-toggle="modal" data-target="#facilitydetail"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                             </div>
+                                          </div>
+                                          <div class="clear"></div>
+                                       </div>
+                                       <div class="card-search">
+                                          <div class="vd-form-control has-icon">
+                                             <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search Facilities" id="Search">
+                                             <div class="input-icon">
+                                                <img src="images/lens.svg" alt="lens">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="search-list scrollbox">
+                                          <ul class="cd-list facility-list">
+                                             <li><a href="#" class="list-name">Building A</a><span class="edit-fn"> <a href="#"  data-toggle="modal" data-target="#facilitydetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                             <li><a href="#" class="list-name">Building B</a><span class="edit-fn"> <a href="#"  data-toggle="modal" data-target="#facilitydetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash" aria-hidden="true"></i></a></span> </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- //forms -->
+         </div>
+      </section>
+      <!-- site-modal -->
+      <div class="vd-modal">
+         <div class="modal fade" id="callerdetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h2 class="modal-title" id="exampleModalLongTitle">Add New Site
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                        <img src="images/modal_close_btn.svg" alt="modal_close_btn">
+                        </span>
+                        </button>
+                     </h2>
+                  </div>
+                  <div class="modal-body">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">Site Name</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="type">Region</label>
+                                    <select class="form-control" id="type">
+                                       <option>Select</option>
+                                       <option>Region</option>
+                                       <option>Region</option>
+                                       <option>Region</option>
+                                       <option>Region</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <h3 class="form-head popup-head">Address</h3>
+                                 <div class="form-group">
+                                    <label for="text">Address Line 1</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="text">Address Line 2</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">City</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="type">State/Province</label>
+                                    <select class="form-control" id="type">
+                                       <option>Select</option>
+                                       <option>State</option>
+                                       <option>State</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="type">Country</label>
+                                    <select class="form-control" id="type">
+                                       <option>Select</option>
+                                       <option>Country</option>
+                                       <option>Country</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">Zip Code</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">Latitude</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">Longitude</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="asset-map">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224369.03562773156!2d77.25804293889325!3d28.51668170943533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C+Uttar+Pradesh!5e0!3m2!1sen!2sin!4v1512992059134" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn vd-btn-outline-primary btn-cancel" data-dismiss="modal">Cancel</button>
+                     <button type="button" class="btn  vd-btn-primary btn-save">Save</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--      functional-location-modal -->
+      <div class="vd-modal">
+         <div class="modal fade" id="fndetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h2 class="modal-title" id="exampleModalLongTitle">Add New Functional Location
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                        <img src="images/modal_close_btn.svg" alt="modal_close_btn">
+                        </span>
+                        </button>
+                     </h2>
+                  </div>
+                  <div class="modal-body">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">Functional Location Name</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="type">Part of</label>
+                                    <select class="form-control" id="type">
+                                       <option>Select</option>
+                                       <option>Region</option>
+                                       <option>Region</option>
+                                       <option>Region</option>
+                                       <option>Region</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <h3 class="form-head popup-head">Address</h3>
+                                 <input type="checkbox" id="checkboxs" class="ui-checkbox" /><label for="checkboxs">Same as Site Address</label>
+                                 <div class="form-group">
+                                    <label for="text">Address Line 1</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="text">Address Line 2</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">City</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="type">State/Province</label>
+                                    <select class="form-control" id="type">
+                                       <option>Select</option>
+                                       <option>State</option>
+                                       <option>State</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="type">Country</label>
+                                    <select class="form-control" id="type">
+                                       <option>Select</option>
+                                       <option>Country</option>
+                                       <option>Country</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">Zip Code</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">Latitude</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">Longitude</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="asset-map">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224369.03562773156!2d77.25804293889325!3d28.51668170943533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C+Uttar+Pradesh!5e0!3m2!1sen!2sin!4v1512992059134" width="100%" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn vd-btn-outline-primary btn-cancel" data-dismiss="modal">Cancel</button>
+                     <button type="button" class="btn  vd-btn-primary btn-save">Save</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- facilities-modal -->
+      <div class="vd-modal">
+         <div class="modal fade" id="facilitydetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h2 class="modal-title" id="exampleModalLongTitle">Add New Facility
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                        <img src="images/modal_close_btn.svg" alt="modal_close_btn">
+                        </span>
+                        </button>
+                     </h2>
+                  </div>
+                  <div class="modal-body">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">Functional Location Name</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="type">Part of</label>
+                                    <select class="form-control" id="type">
+                                       <option>Select</option>
+                                       <option>Region</option>
+                                       <option>Region</option>
+                                       <option>Region</option>
+                                       <option>Region</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <h3 class="form-head popup-head">Address</h3>
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                       <input type="checkbox" id="checkboxs1" class="ui-checkbox" /><label for="checkboxs1">Same as Site Address</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <input type="checkbox" id="checkboxfl1" class="ui-checkbox" /><label for="checkboxfl1">Same as Functional Location</label>
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="text">Address Line 1</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="text">Address Line 2</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">City</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="type">State/Province</label>
+                                    <select class="form-control" id="type">
+                                       <option>Select</option>
+                                       <option>State</option>
+                                       <option>State</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="type">Country</label>
+                                    <select class="form-control" id="type">
+                                       <option>Select</option>
+                                       <option>Country</option>
+                                       <option>Country</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">Zip Code</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">Latitude</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="text">Longitude</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="asset-map">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224369.03562773156!2d77.25804293889325!3d28.51668170943533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C+Uttar+Pradesh!5e0!3m2!1sen!2sin!4v1512992059134" width="100%" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn vd-btn-outline-primary btn-cancel" data-dismiss="modal">Cancel</button>
+                     <button type="button" class="btn  vd-btn-primary btn-save">Save</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- delete-confirm-modal -->
+      <div class="vd-modal">
+         <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h2 class="modal-title" id="exampleModalLongTitle"> 
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                        <img src="images/modal_close_btn.svg" alt="modal_close_btn">
+                        </span>
+                        </button>
+                     </h2>
+                  </div>
+                  <div class="modal-body">
+                     <h4>Are you sure you want to delete?</h4>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn vd-btn-outline-primary btn-cancel" data-dismiss="modal">No</button>
+                     <button type="button" class="btn  vd-btn-primary btn-save">Yes</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer">
+         <p>© Copyright - Intellithink Industrial IOT Labs Private Limited</p>
+      </footer>
+      <!-- scripts -->
+      <script src="js/jquery-3.1.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         $(document).ready(
+         function(){
+         $("#add-contact").click(function () {
+            $("#new-contact").show();
+         });
+         
+         });
+      </script>
+      <script>
+         $('.site-list li').on('click', function(){
+         $('.site-list li').removeClass('active');
+         $(this).addClass('active');
+         });
+         
+         $('.dept-list li').on('click', function(){
+         $('.dept-list li').removeClass('active');
+         $(this).addClass('active');
+         });
+         
+          $('.facility-list li').on('click', function(){
+         $('.facility-list li').removeClass('active');
+         $(this).addClass('active');
+         });
+      </script>
+      <!--   <script>
+         $(".cd-list li").hover(function(){
+          $('.edit-fn').show();
+         },function(){
+          $('.edit-fn').hide();
+         });
+         </script> -->
+   </body>
+</html>

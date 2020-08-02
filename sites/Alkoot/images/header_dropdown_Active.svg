@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>header_dropdown_Active</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.20670074,4.49230769 C4.09767178,4.5978022 3.91595684,4.5978022 3.80692788,4.49230769 L0.0817717206,0.852747253 C-0.0272572402,0.747252747 -0.0272572402,0.571428571 0.0817717206,0.465934066 L0.481544577,0.0791208791 C0.590573538,-0.0263736264 0.772288472,-0.0263736264 0.881317433,0.0791208791 L3.80692788,2.94505495 C3.91595684,3.05054945 4.09767178,3.05054945 4.20670074,2.94505495 L7.13231119,0.0967032967 C7.24134015,-0.00879120879 7.42305508,-0.00879120879 7.53208404,0.0967032967 L7.9318569,0.483516484 C8.02271437,0.589010989 8.02271437,0.747252747 7.9318569,0.852747253 L4.20670074,4.49230769 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard-Multiple-selection" transform="translate(-333.000000, -18.000000)">
+            <g id="Group-3" transform="translate(258.000000, 12.000000)">
+                <g id="icons/utility/chevrondown" transform="translate(75.000000, 6.000000)">
+                    <g id="header_dropdown_Active">
+                        <g>
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

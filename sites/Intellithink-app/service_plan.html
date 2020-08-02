@@ -1,0 +1,752 @@
+<!doctype html>
+<html class="no-js" lang="">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Intellithink</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/css-wrap.css">
+      <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.css'>
+      <script src="https://use.fontawesome.com/99347ac47f.js"></script>
+   </head>
+   <body>
+      <!-- Header -->
+      <section class="custom-header">
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt="logo"></a>
+               </div>
+               <a href="dashboard.html" class="home"><img src="images/Home.svg" alt="home"></a>
+               <ul class="nav navbar-nav center-menu">
+                  <li class="dropdown active">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ASSETS <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="asset_list.html">Asset List</a></li>
+                        <li><a href="fmea.html">Reliability</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MAINTENANCE <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="work_order.html">Work Order</a></li>
+                        <li><a href="wo_generate.html">Generate WO</a></li>
+                        <li><a href="planning.html">Planning</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PURCHASING <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="purchase_list.html">Purchase List</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">KPI <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="kpi_dashboard.html">Dashboard</a></li>
+                        <li><a href="kpi_task.html">Configuration</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="right-menus">
+                  <div class="button-menu" role="group" aria-label="...">
+                     <ul class="nav navbar-nav">
+                        <li><a href="report.html">Reports</a></li>
+                        <li><a href="call_center.html">Call Center</a></li>
+                        <li><a href="contracts.html">Contracts</a></li>
+                     </ul>
+                  </div>
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/settings.svg" alt=""></a>
+                           <ul class="dropdown-menu settings-drop">
+                              <li><a href="customer_list.html">Customers</a></li>
+                              <li><a href="user_role.html">Users</a></li>
+                              <li><a href="system_settings.html">System</a></li>
+                           </ul>
+                        </li>
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                           <div class="dropdown-menu message-drop">
+                              <div class="panel-head">
+                                 <div class="msg-title pull-left">
+                                    <h5>Your Messages</h5>
+                                 </div>
+                                 <div class="msg-action pull-right"><a href="#">Compose</a><a href="messages.html">View All</a></div>
+                                 <div class="clear"></div>
+                              </div>
+                              <div class="msg-list">
+                                 <ul>
+                                    <li>
+                                       <a href="messages.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Hi User, Lorem ipsum dolor sit amet, consectetur a...</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="messages.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Hi User, Lorem ipsum dolor sit amet, consectetur a...</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="msg-more"><a href="#">See All Messages</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa-stack fa-2x has-badge" data-count="7"><i class="fa fa-bell" aria-hidden="true"></i></span></a>
+                           <div class="dropdown-menu notif-drop">
+                              <div class="panel-head">
+                                 <div class="msg-title notif-title">
+                                    <h5>Notification<span class="fa-stack fa-3x has-badge large-badge" data-count="7"></span></h5>
+                                 </div>
+                                 <div class="clear"></div>
+                              </div>
+                              <div class="msg-list">
+                                 <ul>
+                                    <li>
+                                       <a href="#">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>New WO Created</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="request-approve.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Request Approval</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="msg-more"><a href="#">See All Notification</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="dropdown profile-menu">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/profile.png" alt=""> </a>
+                           <ul class="dropdown-menu settings-drop">
+                              <li><a href="password_reset.html">Password Reset</a></li>
+                              <li><a href="settings.html">Settings</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="login.html">Logout</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+         </nav>
+      </section>
+      <!-- /header -->
+      <!--   content -->
+      <section class="add-customer">
+         <div class="container-fluid">
+            <!-- page-head -->
+            <div class="pagetop">
+               <div class="page-head">
+                  <h3 class="page-title">Service Plan<span class="badge badge-cname">DC Generator</span></h3>
+               </div>
+               <div class="page-breadcrumb">
+                  <ol class="breadcrumb">
+                     <li><a href="asset_list.html">Assets</a></li>
+                     <li><a href="asset_general.html">Add Equipment</a></li>
+                     <li class="active">Service Plan</li>
+                  </ol>
+               </div>
+               <div class="clear"></div>
+            </div>
+            <!-- //page-head -->
+            <!-- forms -->
+            <div class="general-forms">
+               <div class="vd-vertical-pills">
+                  <div class="vd-vertical-pills-menu">
+                     <ul class="nav nav-pills" id="v-pills-tab" role="tablist">
+                        <li>
+                           <a class="nav-link "  href="asset_general.html" >General</a>
+                        </li>
+                        <li>
+                           <a class="nav-link"  href="meter_reading.html">Meter Reading</a>
+                        </li>
+                        <li>
+                           <a class="nav-link active"  href="service_plan.html">Service Plan</a>
+                        </li>
+                        <li>
+                           <a class="nav-link "  href="parts.html" >Parts</a>
+                        </li>
+                        <li>
+                           <a class="nav-link "  href="tasks.html">Tasks</a>
+                        </li>
+                        <li>
+                           <a class="nav-link"  href="custom.html">Custom</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="vd-vertical-pills-content">
+                     <div class="vd-card">
+                        <div class="vd-card-body">
+                           <div class="row">
+                              <div class="col-md-3">
+                                 <div class="form-group">
+                                    <label for="text">Meter / Sensor Name</label>
+                                    <select class="form-control" id="Admission">
+                                       <option>Meter Name</option>
+                                       <option>Meter Name</option>
+                                       <option>Meter Name</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="vd-card">
+                        <div class="vd-card-body">
+                           <h3 class="form-head">Measurements</h3>
+                           <div class="row">
+                              <div class="col-md-3">
+                                 <div class="form-group">
+                                    <label for="text">Frequency</label>
+                                    <select class="form-control" id="Admission">
+                                       <option>Hourly</option>
+                                       <option>Daily</option>
+                                       <option>Weekly</option>
+                                       <option>Monthly</option>
+                                       <option>By Monthly</option>
+                                       <option>Quarterly</option>
+                                       <option>Half-Yearly</option>
+                                        <option>Adhoc</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-3">
+                                 <div class="form-group">
+                                    <label for="text">Type</label>
+                                    <select class="form-control" id="Admission">
+                                       <option>Fixed</option>
+                                       <option>Floating</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-2">
+                                 <div class="form-group">
+                                    <label for="text">When</label>
+                                    <select class="form-control" id="Admission">
+                                       <option>Every</option>
+                                       <option>Adhoc</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-1">
+                                 <div class="form-group">
+                                    <label for="text">Interval</label>
+                                    <input type="text" class="form-control" value="1">
+                                 </div>
+                              </div>
+                              <div class="col-md-2">
+                                 <div class="form-group">
+                                    <label for="text">Interval Unit</label>
+                                    <select class="form-control" id="Admission">
+                                       <option>Hours</option>
+                                       <option>Days</option>
+                                       <option>Months</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-3">
+                                 <div class="form-group">
+                                    <label for="text">Type</label>
+                                    <select class="form-control" id="getType">
+                                       <option>Select</option>
+                                       <option value="days">Days</option>
+                                       <option value="time">Time</option>
+                                       <option value="date">Date</option>
+                                       <option value="month">Month</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div id="days" class="type-div">
+                                 <div class="col-md-3">
+                                    <div class="form-group">
+                                       <label for="text">From</label>
+                                       <select class="form-control" id="Admission">
+                                          <option>Monday</option>
+                                          <option>Tuesday</option>
+                                          <option>Wednesday</option>
+                                          <option>Thursday</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-3">
+                                    <div class="form-group">
+                                       <label for="text">To</label>
+                                       <select class="form-control" id="Admission">
+                                          <option>Monday</option>
+                                          <option>Tuesday</option>
+                                          <option>Wednesday</option>
+                                          <option>Thursday</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div id="time" class="type-div">
+                                 <div class="col-md-3">
+                                    <div class="form-group">
+                                       <label for="text">From</label>
+                                       <select class="form-control" id="Admission">
+                                          <option>00:00 Hrs</option>
+                                          <option>00:01 Hrs</option>
+                                          <option>00:02 Hrs</option>
+                                          <option>00:03 Hrs</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-3">
+                                    <div class="form-group">
+                                       <label for="text">To</label>
+                                       <select class="form-control" id="Admission">
+                                          <option>00:00 Hrs</option>
+                                          <option>00:01 Hrs</option>
+                                          <option>00:02 Hrs</option>
+                                          <option>00:03 Hrs</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div id="date" class="type-div">
+                                 <div class="col-md-3">
+                                    <div class="form-group">
+                                       <div class="vd-form-control has-icon">
+                                          <label for="datetimepicker1">
+                                          From</label>
+                                          <input type="text" class="form-control date" placeholder="From" aria-label="datetimepicker1" id="datetimepicker1">
+                                          <div class="input-icon">
+                                             <img src="images/Date_picker.svg" alt="Date_picker">
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-3">
+                                    <div class="form-group">
+                                       <div class="vd-form-control has-icon">
+                                          <label for="datetimepicker2">To</label>
+                                          <input type="text" class="form-control date" placeholder="To" aria-label="datetimepicker2" id="datetimepicker2">
+                                          <div class="input-icon">
+                                             <img src="images/Date_picker.svg" alt="Date_picker">
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div id="month" class="type-div">
+                                 <div class="col-md-3">
+                                    <div class="form-group">
+                                       <label for="text">From</label>
+                                       <select class="form-control" id="Admission">
+                                          <option>January</option>
+                                          <option>February</option>
+                                          <option>March</option>
+                                          <option>April</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-3">
+                                    <div class="form-group">
+                                       <label for="text">To</label>
+                                       <select class="form-control" id="Admission">
+                                          <option>January</option>
+                                          <option>February</option>
+                                          <option>March</option>
+                                          <option>April</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="vd-card button-card button-card-top">
+                        <div class="vd-card-body">
+                           <div class="action-buttons">
+                              <div class="cancel">
+                                 <button type="button" class="btn btn-cancel">Cancel</button>
+                              </div>
+                              <div class="save">
+                                 <button type="button" class="btn btn-save">Save</button>
+                              </div>
+                              <div class="clear"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="list-table">
+                        <div class="vd-card">
+                           <div class="table-head">
+                              <div class="table-title">
+                                 <h3 class="page-title">Service Plan</h3>
+                              </div>
+                              <div class="table-function">
+                                 <div class="vd-filter-dropdown-wrap">
+                                    <a href="#" class="file-icn" title="Export Excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i></a>
+                                 </div>
+                                 <div class="search">
+                                    <div class="vd-form-control has-icon">
+                                       <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search" id="Search">
+                                       <div class="input-icon">
+                                          <img src="images/lens.svg" alt="lens">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- <div class="add-customerbtn">
+                                    <div class="dropdown">
+                                       <button class="btn btn-add" data-toggle="modal" data-target="#exampleModalLong"><i class="fa fa-plus" aria-hidden="true" style="margin-right: 10px;"></i>Add
+                                       </button>
+                                       
+                                    </div>
+                                    </div> -->
+                              </div>
+                              <div class="clear"></div>
+                           </div>
+                           <div class="customer-list-table no-filter-table service-table">
+                              <table class="table">
+                                 <thead>
+                                    <tr>
+                                       <th>Meter/Sensor Name</th>
+                                       <th>Task Code</th>
+                                       <th>Frequency of Measurement (Trigger  Event)</th>
+                                       <th>Type</th>
+                                       <th>When</th>
+                                       <th>Interval</th>
+                                       <th>Interval Unit</th>
+                                       <th>Starting From</th>
+                                       <th>To</th>
+                                       <th>&nbsp;</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td rowspan="6">Inspection Calendar</td>
+                                       <td rowspan="6">TASK I0101
+                                          TASK I0301
+                                          TASK I0501
+                                          TASK I0701
+                                          TASK I1101
+                                       </td>
+                                       <td rowspan="2">Hourly(1, 3,5,7.9.11.13.15,17.19.21.23)</td>
+                                       <td>Fixed</td>
+                                       <td>Every</td>
+                                       <td>2</td>
+                                       <td>Hrs</td>
+                                       <td>1.00</td>
+                                       <td>23.00</td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Floating</td>
+                                       <td>Every</td>
+                                       <td>2</td>
+                                       <td>Hrs</td>
+                                       <td>1.00</td>
+                                       <td>23.00</td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td rowspan="2">Daily</td>
+                                       <td>Fixed</td>
+                                       <td>At</td>
+                                       <td></td>
+                                       <td></td>
+                                       <td>07.00</td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Floating</td>
+                                       <td>At</td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td rowspan="2">Weekly</td>
+                                       <td>Fixed</td>
+                                       <td>Every</td>
+                                       <td>2</td>
+                                       <td>Days</td>
+                                       <td>Monday</td>
+                                       <td>Saturday</td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Floating</td>
+                                       <td>Every</td>
+                                       <td>2</td>
+                                       <td>Days</td>
+                                       <td>Monday</td>
+                                       <td>Saturday</td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Vibration(G)</td>
+                                       <td>TASK V101</td>
+                                       <td>Continuous(G>12)</td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td rowspan="2">Temperature</td>
+                                       <td rowspan="2">TASK MJ 101
+                                          TASK MF 201
+                                          TASK MM301
+                                       </td>
+                                       <td rowspan="2">Monthly(All Months)</td>
+                                       <td>Fixed</td>
+                                       <td>Every</td>
+                                       <td>Any Number</td>
+                                       <td>Months</td>
+                                       <td>JAN-2010</td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Floating</td>
+                                       <td>Every</td>
+                                       <td>Any Number</td>
+                                       <td>Months</td>
+                                       <td>JAN-2010</td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td rowspan="6">PM Calendar</td>
+                                       <td rowspan="6">
+                                       </td>
+                                       <td rowspan="2">Bimonthly(Jan , mar , May , July, Sep , Nov)</td>
+                                       <td>Fixed</td>
+                                       <td>Every</td>
+                                       <td>2</td>
+                                       <td>Months</td>
+                                       <td>Jan 2010</td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Floating</td>
+                                       <td>Every</td>
+                                       <td>2</td>
+                                       <td>Months</td>
+                                       <td>Jan 2010</td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td rowspan="2">Quarterly(Jan, Apr , July , Oct)</td>
+                                       <td>Fixed</td>
+                                       <td>Every</td>
+                                       <td>2</td>
+                                       <td>Months</td>
+                                       <td>Jan 2010</td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Floating</td>
+                                       <td>Every</td>
+                                       <td>2</td>
+                                       <td>Months</td>
+                                       <td>Jan 2010</td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td rowspan="2">Half Yearly(Jan, July)</td>
+                                       <td>Fixed</td>
+                                       <td>Every</td>
+                                       <td>2</td>
+                                       <td>Months</td>
+                                       <td>Jan 2010</td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Floating</td>
+                                       <td>Every</td>
+                                       <td>2</td>
+                                       <td>Months</td>
+                                       <td>Jan 2010</td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td rowspan="2">Warranty Calendar</td>
+                                       <td rowspan="2"></td>
+                                       <td rowspan="2">Quarterly(Jan , April , July , Oct)</td>
+                                       <td>Fixed</td>
+                                       <td>Every</td>
+                                       <td>3</td>
+                                       <td>Months</td>
+                                       <td>JAN-2010</td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Floating</td>
+                                       <td>Every</td>
+                                       <td>3</td>
+                                       <td>Months</td>
+                                       <td>JAN-2010</td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Calibration Calendar</td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Pressure(p)</td>
+                                       <td>TASK P101</td>
+                                       <td>Continuous(p>15)</td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Clock</td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Calendar</td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- //forms -->
+         </div>
+      </section>
+      <footer class="footer">
+         <p>© Copyright - Intellithink Industrial IOT Labs Private Limited</p>
+      </footer>
+      <!-- scripts -->
+      <script src="js/jquery-3.1.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src='https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.min.js'></script>
+      <script src="js/moment.js"></script>
+      <script src="js/bootstrap-datetimepicker.js"></script>
+      <script>
+         $(document).ready(
+         function(){
+         $("#add-contact").click(function () {
+            $("#new-contact").show();
+         });
+         
+         });
+      </script>
+      <script>
+         $('#datetimepicker1').datetimepicker({
+         
+          defaultDate: new Date(),
+          showClose: true,
+          // format: 'DD/MM/YYYY',
+          keepOpen: false,
+          icons: {
+              time: "datepicker-icon time-icon",
+              date: "datepicker-icon date-icon",
+              up: "datepicker-icon up-icon",
+              down: "datepicker-icon down-icon",
+              previous: 'datepicker-icon prev-icon',
+              next: 'datepicker-icon next-icon',
+              close: 'datepicker-icon close-icon'
+          }
+         
+         });
+         $('#datetimepicker2').datetimepicker({
+         
+          defaultDate: new Date(),
+          showClose: true,
+          // format: 'DD/MM/YYYY',
+          keepOpen: false,
+          icons: {
+              time: "datepicker-icon time-icon",
+              date: "datepicker-icon date-icon",
+              up: "datepicker-icon up-icon",
+              down: "datepicker-icon down-icon",
+              previous: 'datepicker-icon prev-icon',
+              next: 'datepicker-icon next-icon',
+              close: 'datepicker-icon close-icon'
+          }
+         
+         });
+      </script>
+   </body>
+</html>

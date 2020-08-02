@@ -1,0 +1,806 @@
+<!doctype html>
+<html class="no-js" lang="">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Intellithink</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/css-wrap.css">
+      <script src="https://use.fontawesome.com/99347ac47f.js"></script>
+   </head>
+   <body>
+      <!-- Header -->
+      <section class="custom-header">
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt="logo"></a>
+               </div>
+               <a href="dashboard.html" class="home"><img src="images/Home.svg" alt="home"></a>
+               <ul class="nav navbar-nav center-menu">
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ASSETS <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="asset_list.html">Asset List</a></li>
+                        <li><a href="fmea.html">Reliability</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MAINTENANCE <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="work_order.html">Work Order</a></li>
+                        <li><a href="wo_generate.html">Generate WO</a></li>
+                        <li><a href="planning.html">Planning</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PURCHASING <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="purchase_list.html">Purchase List</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">KPI <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="kpi_dashboard.html">Dashboard</a></li>
+                        <li><a href="kpi_task.html">Configuration</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="right-menus">
+                  <div class="button-menu" role="group" aria-label="...">
+                     <ul class="nav navbar-nav">
+                        <li><a href="report.html">Reports</a></li>
+                        <li><a href="call_center.html">Call Center</a></li>
+                        <li><a href="contracts.html">Contracts</a></li>
+                     </ul>
+                  </div>
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/settings.svg" alt=""></a>
+                           <ul class="dropdown-menu settings-drop">
+                              <li><a href="customer_list.html">Customers</a></li>
+                              <li><a href="user_role.html">Users</a></li>
+                              <li><a href="system_settings.html">System</a></li>
+                           </ul>
+                        </li>
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                           <div class="dropdown-menu message-drop">
+                              <div class="panel-head">
+                                 <div class="msg-title pull-left">
+                                    <h5>Your Messages</h5>
+                                 </div>
+                                 <div class="msg-action pull-right"><a href="#">Compose</a><a href="messages.html">View All</a></div>
+                                 <div class="clear"></div>
+                              </div>
+                              <div class="msg-list">
+                                 <ul>
+                                    <li>
+                                       <a href="messages.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Hi User, Lorem ipsum dolor sit amet, consectetur a...</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="messages.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Hi User, Lorem ipsum dolor sit amet, consectetur a...</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="msg-more"><a href="#">See All Messages</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa-stack fa-2x has-badge" data-count="7"><i class="fa fa-bell" aria-hidden="true"></i></span></a>
+                           <div class="dropdown-menu notif-drop">
+                              <div class="panel-head">
+                                 <div class="msg-title notif-title">
+                                    <h5>Notification<span class="fa-stack fa-3x has-badge large-badge" data-count="7"></span></h5>
+                                 </div>
+                                 <div class="clear"></div>
+                              </div>
+                              <div class="msg-list">
+                                 <ul>
+                                    <li>
+                                       <a href="#">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>New WO Created</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="request-approve.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Request Approval</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="msg-more"><a href="#">See All Notification</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="dropdown profile-menu">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/profile.png" alt=""> </a>
+                           <ul class="dropdown-menu settings-drop">
+                              <li><a href="password_reset.html">Password Reset</a></li>
+                              <li><a href="settings.html">Settings</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="login.html">Logout</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+         </nav>
+      </section>
+      <!-- /header -->
+      <!--   content -->
+      <section class="add-customer">
+         <div class="container-fluid">
+            <!-- page-head -->
+            <div class="pagetop">
+               <div class="page-head">
+                  <h3 class="page-title">Users</h3>
+               </div>
+               <div class="page-breadcrumb">
+                  <!-- 
+                     <ol class="breadcrumb">
+                        <li><a href="customer_list.html">Customer</a></li>
+                        <li><a href="add_customers.html">Add Customer</a></li>
+                        <li class="active">Sites</li>
+                     </ol>
+                     -->
+               </div>
+               <div class="clear"></div>
+            </div>
+            <!-- //page-head -->
+            <!-- forms -->
+            <div class="general-forms">
+               <div class="vd-vertical-pills">
+                  <div class="vd-vertical-pills-menu">
+                     <ul class="nav nav-pills" id="v-pills-tab" role="tablist">
+                        <li>
+                           <a class="nav-link "  href="user_role.html" >User Role</a>
+                        </li>
+                        <li>
+                           <a class="nav-link active"  href="users.html" >User</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="vd-vertical-pills-content">
+                     <div class="site-cards">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="vd-card vd-card-box">
+                                 <div class="vd-card-body">
+                                    <div class="card-box">
+                                       <div class="card-top">
+                                          <div class="card-title">
+                                             <div class="card-name">
+                                                <h5><span class="card-icn"><img src="images/user_icon.svg" alt=""></span>Users</h5>
+                                                <div class="card-info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+                                             </div>
+                                          </div>
+                                          <div class="card-fn">
+                                             <div class="edit-card">
+                                                <a href="#" data-toggle="modal" data-target="#userDetail"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                             </div>
+                                          </div>
+                                          <div class="clear"></div>
+                                       </div>
+                                       <div class="card-search">
+                                          <div class="vd-form-control has-icon">
+                                             <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search Users" id="Search">
+                                             <div class="input-icon">
+                                                <img src="images/lens.svg" alt="lens">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="search-list scrollbox">
+                                          <ul class="cd-list dept-list">
+                                             <li class="active"><a href="#" class="list-name">John Smith</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#userDetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                             <li><a href="#" class="list-name">User A</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#userDetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                             <li><a href="#" class="list-name">User B</a><span class="edit-fn"> <a href="#" data-toggle="modal" data-target="#userDetail"><i class="fa fa-pencil" aria-hidden="true"></i></a><a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash" aria-hidden="true"></i></a></span></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-8">
+                              <div class="vd-card">
+                                 <div class="vd-card-body">
+                                    <div class="user-account-info">
+                                       <h3 class="form-head">Account Info</h3>
+                                       <div class="row">
+                                          
+                                          <div class="col-md-10">
+                                             <div class="row">
+                                                <div class="col-md-3">
+                                                   <div class="form-group">
+                                                      <label class="plain-text" for="text">Full Name</label>
+                                                      <p>John Smith</p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                   <div class="form-group">
+                                                      <label class="plain-text" for="text">Personnel Code</label>
+                                                      <p>U32</p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                   <div class="form-group">
+                                                      <label class="plain-text" for="text">Title</label>
+                                                      <p>Supervisor</p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                   <div class="form-group">
+                                                      <label class="plain-text" for="text">Email</label>
+                                                      <p>john@gmail.com</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-3">
+                                                   <div class="form-group">
+                                                      <label class="plain-text" for="text">Phone No.</label>
+                                                      <p>9874254125</p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                   <div class="form-group">
+                                                      <label class="plain-text" for="text">Role</label>
+                                                      <p>user_group r28</p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                   <div class="form-group">
+                                                      <label class="plain-text" for="text">Reports to</label>
+                                                      <p>Admin User</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-3">
+                                                   <div class="form-group">
+                                                      <a href="#">Change Password</a>
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                   <div class="input-switch">
+                                                      <p>Block</p>
+                                                      <input type="checkbox" id="checkbox1">
+                                                      <label for="checkbox1"></label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2"><img class="eqp-img" src="images/profilepl.png" alt="">
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="vd-card">
+                                 <div class="vd-card-body">
+                                    <h3 class="form-head">Permissions</h3>
+                                    <div class="row">
+                                       
+                                       <div class="col-md-10">
+                                          <div class="user-premissions">
+                                             <div class="permission-table">
+                                                <table class="form-table" border="0">
+                                                   <tr>
+                                                      <th>&nbsp;</th>
+                                                      <th>App</th>
+                                                      <th>Edit</th>
+                                                   </tr>
+                                                   <tr>
+                                                      <td><input type="checkbox" id="checkbox-1-1" class="ui-checkbox" /><label for="checkbox-1-1" style="font-weight: 600;">Module</label></td>
+                                                      <td><input type="checkbox" id="checkboxap" class="ui-checkbox" /><label for="checkboxap">&nbsp;</label></td>
+                                                      <td><input type="checkbox" id="checkboxed" class="ui-checkbox" /><label for="checkboxed">&nbsp;</label></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td><input type="checkbox" id="checkbox-1-11" class="ui-checkbox" /><label for="checkbox-1-11">Pages</label></td>
+                                                      <td><input type="checkbox" id="checkboxap1" class="ui-checkbox" /><label for="checkboxap1">&nbsp;</label></td>
+                                                      <td><input type="checkbox" id="checkboxed1" class="ui-checkbox" /><label for="checkboxed1">&nbsp;</label></td>
+                                                   </tr>
+                                                </table>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="vd-card">
+                                 <div class="vd-card-body">
+                                    <div class="collapse-form">
+                                       <a class="form-head collapse-element" data-toggle="collapse" data-target="#file" aria-expanded="true"><span style="margin-right: 10px;"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>Skill Matrix</a>
+                                       <div id="file" class="collapse in">
+                                          <div class="contact-table file-table">
+                                             <table class="table">
+                                                <thead>
+                                                   <tr>
+                                                      <th>Skill Name</th>
+                                                      <th>Rating</th>
+                                                      <th>Certificate Name</th>
+                                                      <th>Attach Certificate</th>
+                                                   </tr>
+                                                </thead>
+                                                <tbody>
+                                                   <tr>
+                                                      <td><a href="#">Col 11</a> </td>
+                                                      <td>Col 11</td>
+                                                      <td>Col 11</td>
+                                                      <td><a href="#">Col 11</a></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td><a href="#">Col 11</a> </td>
+                                                      <td>Col 11</td>
+                                                      <td>Col 11</td>
+                                                      <td><a href="#">Col 11</a></td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="vd-card">
+                                 <div class="vd-card-body">
+                                    <div class="collapse-form">
+                                       <a class="form-head collapse-element" data-toggle="collapse" data-target="#log" aria-expanded="true"><span style="margin-right: 10px;"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>Log</a>
+                                       <div id="log" class="collapse in">
+                                          <div class="log-details">
+                                             <ul class="log-list">
+                                                <li><span class="log-type1">Scheduled Maintenance</span> <span class="log-date">- 12 Jan 2017</span><span class="log-desc">- Regular checkup for oil , filter & motor bells</span></li>
+                                                <li><span class="log-type3">Work Order History</span> <span class="log-date">- 12 Jan 2017</span><span class="log-desc">- Work order history description here</span></li>
+                                                <li><span class="log-type2">Open Work Order</span> <span class="log-date">- 12 Jan 2017</span><span class="log-desc">- Open work order description here</span></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="vd-card button-card">
+                                 <div class="vd-card-body">
+                                    <div class="action-buttons">
+                                       <div class="cancel">
+                                          <button type="button" class="btn btn-cancel">Cancel</button>
+                                       </div>
+                                       <div class="save">
+                                          <button type="button" class="btn btn-save">Save</button>
+                                       </div>
+                                       <div class="clear"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- //forms -->
+         </div>
+      </section>
+      <!--      user-modal -->
+      <div class="vd-modal">
+         <div class="modal fade" id="userDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h2 class="modal-title" id="exampleModalLongTitle">Add User
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                        <img src="images/modal_close_btn.svg" alt="modal_close_btn">
+                        </span>
+                        </button>
+                     </h2>
+                  </div>
+                  <div class="modal-body">
+                     <section>
+                        <div class="wizard">
+                           <div class="wizard-inner">
+                              <div class="connecting-line"></div>
+                              <ul class="nav nav-tabs" role="tablist">
+                                 <li role="presentation" class="active">
+                                    <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="">
+                                       <span class="round-tab">
+                                          <p class="step-no" id="step-no"><span>1</span></p>
+                                       </span>
+                                    </a>
+                                    <p class="step-name">Account Info</p>
+                                 </li>
+                                 <li role="presentation" class="disabled">
+                                    <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="">
+                                       <span class="round-tab">
+                                          <p class="step-no"><span>2</span></p>
+                                          
+                                       </span>
+                                    </a>
+                                    <p class="step-name">Contact Info</p>
+                                 </li>
+                                 <li role="presentation" class="disabled">
+                                    <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="">
+                                       <span class="round-tab">
+                                          <p class="step-no"><span>3</span></p>
+                                          
+                                       </span>
+                                    </a>
+                                    <p class="step-name">Assign Role</p>
+                                 </li>
+                                 <li role="presentation" class="disabled">
+                                    <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab" title="">
+                                       <span class="round-tab">
+                                          <p class="step-no"><span>4</span></p>
+                                          
+                                       </span>
+                                    </a>
+                                 </li>
+                                 <p class="step-name">Skill Matrix</p>
+                              </ul>
+                           </div>
+                           <form role="form">
+                              <div class="tab-content">
+                                 <div class="tab-pane active" role="tabpanel" id="step1">
+                                    <div class="row tab-container">
+                                       <div class="col-md-2">
+                                          <div class="upload-user-logo tint">
+                                             <a href="#"><img class="eqp-img" src="images/profilepl.png" alt=""><span class="profile-add-small"><img src="images/plus_icon.svg" alt=""></span></a><span class="delete-pht"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></span>
+                                          </div>
+                                          <div class="eng-name">
+                                             <a href="#">Add Image</a>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-10">
+                                          <div class="row">
+                                             <div class="col-md-6">
+                                                <div class="form-group">
+                                                   <label for="text">First Name</label>
+                                                   <input type="text" class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-6">
+                                                <div class="form-group">
+                                                   <label for="text">Last Name</label>
+                                                   <input type="text" class="form-control">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col-md-6">
+                                                <div class="form-group">
+                                                   <label for="text">Titles</label>
+                                                   <input type="text" class="form-control">
+                                                </div>
+                                             </div>
+                                             <div class="col-md-6">
+                                                <div class="form-group">
+                                                   <label for="text">Reports To</label>
+                                                   <input type="text" class="form-control">
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row">
+                                             <div class="col-md-6">
+                                                <div class="form-group">
+                                                   <div class="vd-form-control has-icon">
+                                                      <label for="Search">Sites</label>
+                                                      <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search" id="Search">
+                                                      <div class="input-icon">
+                                                         <img src="images/lens.svg" alt="lens">
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-md-6">
+                                                <div class="form-group">
+                                                   <div class="vd-form-control has-icon">
+                                                      <label for="Search">Functional Location</label>
+                                                      <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search" id="Search">
+                                                      <div class="input-icon">
+                                                         <img src="images/lens.svg" alt="lens">
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="modal-footer tab-footer">
+                                       <button type="button" class="btn vd-btn-outline-primary btn-cancel" data-dismiss="modal">Cancel</button>
+                                       <button type="button" class="btn  vd-btn-primary btn-save next-step">Next</button>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane" role="tabpanel" id="step2">
+                                    <div class="tab-container">
+                                       <div class="row">
+                                          <div class="col-md-4">
+                                             <div class="form-group">
+                                                <label for="text">Email</label>
+                                                <input type="text" class="form-control">
+                                             </div>
+                                          </div>
+                                          <div class="col-md-4">
+                                             <div class="form-group">
+                                                <label for="text">Work Phone</label>
+                                                <input type="text" class="form-control">
+                                             </div>
+                                          </div>
+                                          <div class="col-md-4">
+                                             <div class="form-group">
+                                                <label for="text">Mobile</label>
+                                                <input type="text" class="form-control">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-md-8">
+                                             <div class="form-group">
+                                                <label for="text">Address Line 1</label>
+                                                <input type="text" class="form-control">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-md-8">
+                                             <div class="form-group">
+                                                <label for="text">Address Line 1</label>
+                                                <input type="text" class="form-control">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-md-4">
+                                             <div class="form-group">
+                                                <label for="text">City</label>
+                                                <input type="text" class="form-control">
+                                             </div>
+                                          </div>
+                                          <div class="col-md-4">
+                                             <div class="form-group">
+                                                <label for="type">State / Province</label>
+                                                <select class="form-control" id="type">
+                                                   <option>State</option>
+                                                   <option>State</option>
+                                                   <option>State</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-4">
+                                             <div class="form-group">
+                                                <label for="type">Country</label>
+                                                <select class="form-control" id="type">
+                                                   <option>Country</option>
+                                                   <option>Country</option>
+                                                   <option>Country</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-4">
+                                             <div class="form-group">
+                                                <label for="text">Zipcode</label>
+                                                <input type="text" class="form-control">
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="modal-footer tab-footer">
+                                       <button type="button" class="btn vd-btn-outline-primary btn-cancel" data-dismiss="modal">Cancel</button>
+                                       <button type="button" class="btn  vd-btn-primary btn-save next-step">Next</button>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane" role="tabpanel" id="step3">
+                                    <div class="tab-container">
+                                       <div class="row">
+                                          <div class="col-md-4">
+                                             <div class="form-group">
+                                                <label for="type">Assign Role</label>
+                                                <select class="form-control" id="type">
+                                                   <option>Role</option>
+                                                   <option>Role</option>
+                                                   <option>Role</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="modal-footer tab-footer">
+                                       <button type="button" class="btn vd-btn-outline-primary btn-cancel" data-dismiss="modal">Cancel</button>
+                                       <button type="button" class="btn  vd-btn-primary btn-save next-step">Next</button>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane" role="tabpanel" id="step4">
+                                    <div class="tab-container">
+                                       <div class="contact-table file-table">
+                                          <table class="table">
+                                             <thead>
+                                                <tr>
+                                                   <th>Skill Name</th>
+                                                   <th>Rating</th>
+                                                   <th>Certificate Name</th>
+                                                   <th>Attach Certificate</th>
+                                                   <th><a class='btn btn-table' id="add-skill"><i class="fa fa-plus" aria-hidden="true" style="margin-right: 7px;"></i>Add</a></th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <td><a href="#">Col 11</a> </td>
+                                                   <td>Col 11</td>
+                                                   <td>Col 11</td>
+                                                   <td><a href="#">Col 11</a></td>
+                                                   <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                                </tr>
+                                                <tr>
+                                                   <td><a href="#">Col 11</a> </td>
+                                                   <td>Col 11</td>
+                                                   <td>Col 11</td>
+                                                   <td><a href="#">Col 11</a></td>
+                                                   <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                                </tr>
+                                                <tr id="new-skill">
+                                                   <td><input type="text" class="form-control"></td>
+                                                   <td><input type="text" class="form-control"></td>
+                                                   <td><input type="text" class="form-control"></td>
+                                                   <td>
+                                                      <div class="input-group table-input">
+                                                         <input type="text" class="form-control" readonly>
+                                                         <label class="input-group-btn">
+                                                         <span class="btn btn-browse">
+                                                         <i class="fa fa-file-text" aria-hidden="true"></i> <input type="file" style="display: none;" multiple>
+                                                         </span>
+                                                         </label>
+                                                      </div>
+                                                   </td>
+                                                   <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                    <div class="modal-footer tab-footer">
+                                       <button type="button" class="btn vd-btn-outline-primary btn-cancel" data-dismiss="modal">Cancel</button>
+                                       <button type="button" class="btn  vd-btn-primary btn-save next-step" data-dismiss="modal" data-toggle="modal" data-target="#finishModal">Finish</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </section>
+                  </div>
+                  <!-- <div class="modal-footer">
+                     <button type="button" class="btn vd-btn-outline-primary btn-cancel" data-dismiss="modal">Cancel</button>
+                     <button type="button" class="btn  vd-btn-primary btn-save next-step">Next</button>
+                     </div> -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- delete-confirm-modal -->
+      <div class="vd-modal">
+         <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h2 class="modal-title" id="exampleModalLongTitle"> 
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                        <img src="images/modal_close_btn.svg" alt="modal_close_btn">
+                        </span>
+                        </button>
+                     </h2>
+                  </div>
+                  <div class="modal-body">
+                     <h4>Are you sure you want to delete?</h4>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn vd-btn-outline-primary btn-cancel" data-dismiss="modal">No</button>
+                     <button type="button" class="btn  vd-btn-primary btn-save">Yes</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- finish-modal -->
+      <div class="vd-modal">
+         <div class="modal fade" id="finishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h2 class="modal-title" id="exampleModalLongTitle">Confirmation Message 
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                        <img src="images/modal_close_btn.svg" alt="modal_close_btn">
+                        </span>
+                        </button>
+                     </h2>
+                  </div>
+                  <div class="modal-body">
+                     <h4>User Added Successfully</h4>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn vd-btn-outline-primary btn-cancel" data-dismiss="modal">Cancel</button>
+                     <button type="button" class="btn  vd-btn-primary btn-save">Done</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer">
+         <p>© Copyright - Intellithink Industrial IOT Labs Private Limited</p>
+      </footer>
+      <!-- scripts -->
+      <script src="js/jquery-3.1.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         $(document).ready(
+         function(){
+         $("#add-contact").click(function () {
+            $("#new-contact").show();
+         });
+          $("#add-skill").click(function () {
+            $("#new-skill").show();
+         });
+         
+         });
+      </script>
+      <script>
+         $('.site-list li').on('click', function(){
+         $('.site-list li').removeClass('active');
+         $(this).addClass('active');
+         });
+         
+         $('.dept-list li').on('click', function(){
+         $('.dept-list li').removeClass('active');
+         $(this).addClass('active');
+         });
+         
+          $('.facility-list li').on('click', function(){
+         $('.facility-list li').removeClass('active');
+         $(this).addClass('active');
+         });
+      </script>
+      <script>
+         $(".upload-user-logo").hover(function(){
+         $(".delete-pht").toggle();
+         });
+      </script>
+   </body>
+</html>

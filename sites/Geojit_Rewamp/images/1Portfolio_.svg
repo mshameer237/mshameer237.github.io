@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="125px" height="124px" viewBox="0 0 125 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="125" height="123.820755"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FINANCIAL-SOLUTIONS" transform="translate(-448.000000, -2540.000000)">
+            <g id="Group-24" transform="translate(448.000000, 2540.000000)">
+                <g id="10256567-falling-dollar-note-and-graph-of-stock-market-with-stock-board-Stock-Photo-Copy-4">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" opacity="0.02" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group-17-Copy-2" transform="translate(3.000000, 2.000000)">
+                    <g id="noun_763916_cc-copy" transform="translate(13.500000, 19.500000)">
+                        <g id="Group">
+                            <g transform="translate(1.002013, 0.000000)"></g>
+                        </g>
+                    </g>
+                    <circle id="Oval-3-Copy" cx="60" cy="60" r="60"></circle>
+                    <g id="Group-12" transform="translate(30.000000, 30.000000)" fill="#046567" stroke="#FAFAFA">
+                        <g id="noun_906704_cc">
+                            <g id="Group">
+                                <g transform="translate(-0.000000, -0.000000)" id="Group-5">
+                                    <g transform="translate(-0.000000, -0.000000)">
+                                        <path d="M28,50 C28.552,50 29,49.552 29,49 L29,39 C29,38.448 28.552,38 28,38 L24,38 L24,24 C24,20.14 20.86,17 17,17 L7,17 C3.14,17 5.84007728e-15,20.14 5.84007728e-15,24 L5.84007728e-15,38 L2,38 L2,24 C2,21.243 4.243,19 7,19 L8.307,19 L11.064,26.351 C11.21,26.741 11.583,27 12,27 C12.417,27 12.79,26.741 12.937,26.351 L15.693,19 L17,19 C19.757,19 22,21.243 22,24 L22,38 L19,38 L19,25 L17,25 L17,39 L17,49 L17,58 L13,58 L13,39 L11,39 L11,58 L7,58 L7,25 L5,25 L5,59 C5,59.552 5.448,60 6,60 L12,60 L18,60 C18.552,60 19,59.552 19,59 L19,50 L28,50 Z M12,23.152 L10.443,19 L13.557,19 L12,23.152 Z M19,48 L19,46 L27,46 L27,48 L19,48 Z M27,40 L27,44 L19,44 L19,40 L27,40 Z" id="Shape"></path>
+                                        <rect id="Rectangle-path" x="11" y="29" width="2" height="2"></rect>
+                                        <rect id="Rectangle-path" x="11" y="33" width="2" height="2"></rect>
+                                        <path d="M11,16 L13,16 C15.757,16 18,13.757 18,11 L18,8 C18,5.243 15.757,3 13,3 L11,3 C8.243,3 6,5.243 6,8 L6,11 C6,13.757 8.243,16 11,16 Z M8,8 C8,6.346 9.346,5 11,5 L13,5 C14.654,5 16,6.346 16,8 L16,11 C16,12.654 14.654,14 13,14 L11,14 C9.346,14 8,12.654 8,11 L8,8 Z" id="Shape"></path>
+                                        <path d="M30,5.84007728e-15 C27.188,5.84007728e-15 24.403,0.389 21.724,1.156 L22.275,3.079 C24.457,2.454 26.714,2.099 29,2.018 L29,30 C29,30.552 29.448,31 30,31 L57.982,31 C57.454,45.978 45.104,58 30,58 C27.373,58 24.772,57.637 22.272,56.92 L21.721,58.843 C24.401,59.611 27.186,60 30,60 C46.542,60 60,46.542 60,30 C60,13.458 46.542,5.84007728e-15 30,5.84007728e-15 Z M31,29 L31,26 L52,26 L52,24 L31,24 L31,20 L50,20 L50,18 L31,18 L31,14 L46,14 L46,12 L31,12 L31,8 L40,8 L40,6 L31,6 L31,2.018 C45.646,2.534 57.466,14.354 57.982,29 L31,29 Z" id="Shape"></path>
+                                        <rect id="Rectangle-path" x="52" y="33" width="2" height="2"></rect>
+                                        <rect id="Rectangle-path" x="44" y="33" width="2" height="2"></rect>
+                                        <rect id="Rectangle-path" x="36" y="33" width="2" height="2"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>contact_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home_d3" transform="translate(-1303.000000, -35.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="contact_icon" transform="translate(1303.000000, 35.000000)">
+                <g id="Group">
+                    <path d="M0,0.166666667 L0,21.8666667 L32.9114583,21.8666667 L32.9114583,0.166666667 L0,0.166666667 L0,0.166666667 Z M31.8367985,20.7666667 L1.07465986,20.7666667 L1.07465986,1.2 L31.8367985,1.2 L31.8367985,20.7666667 Z" id="Shape"></path>
+                    <polygon id="Shape" points="6.4815423 16.9 12.7280028 11.7 16.4557292 14.7666667 20.1834556 11.7 26.429916 16.9 27.1015784 16.1 20.9894505 11 27.1015784 5.93333333 26.429916 5.1 16.4557292 13.4 6.4815423 5.1 5.80987989 5.93333333 11.9220079 11 5.80987989 16.1"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

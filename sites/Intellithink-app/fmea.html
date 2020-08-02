@@ -1,0 +1,599 @@
+<!doctype html>
+<html class="no-js" lang="">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Intellithink</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/css-wrap.css">
+      <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.css'>
+      <script src="https://use.fontawesome.com/99347ac47f.js"></script>
+   </head>
+   <body>
+      <!-- Header -->
+      <section class="custom-header">
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt="logo"></a>
+               </div>
+               <a href="dashboard.html" class="home"><img src="images/Home.svg" alt="home"></a>
+               <ul class="nav navbar-nav center-menu">
+                  <li class="dropdown active">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ASSETS <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="asset_list.html">Asset List</a></li>
+                        <li><a href="fmea.html">Reliability</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MAINTENANCE <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="work_order.html">Work Order</a></li>
+                        <li><a href="wo_generate.html">Generate WO</a></li>
+                        <li><a href="planning.html">Planning</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PURCHASING <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="purchase_list.html">Purchase List</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">KPI <span class="caret"></span></a>
+                     <ul class="dropdown-menu settings-drop">
+                        <li><a href="kpi_dashboard.html">Dashboard</a></li>
+                        <li><a href="kpi_task.html">Configuration</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="right-menus">
+                  <div class="button-menu" role="group" aria-label="...">
+                     <ul class="nav navbar-nav">
+                        <li><a href="report.html">Reports</a></li>
+                        <li><a href="call_center.html">Call Center</a></li>
+                        <li><a href="contracts.html">Contracts</a></li>
+                     </ul>
+                  </div>
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/settings.svg" alt=""></a>
+                           <ul class="dropdown-menu settings-drop">
+                              <li><a href="customer_list.html">Customers</a></li>
+                              <li><a href="user_role.html">Users</a></li>
+                              <li><a href="system_settings.html">System</a></li>
+                           </ul>
+                        </li>
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                           <div class="dropdown-menu message-drop">
+                              <div class="panel-head">
+                                 <div class="msg-title pull-left">
+                                    <h5>Your Messages</h5>
+                                 </div>
+                                 <div class="msg-action pull-right"><a href="#">Compose</a><a href="messages.html">View All</a></div>
+                                 <div class="clear"></div>
+                              </div>
+                              <div class="msg-list">
+                                 <ul>
+                                    <li>
+                                       <a href="messages.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Hi User, Lorem ipsum dolor sit amet, consectetur a...</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="messages.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Hi User, Lorem ipsum dolor sit amet, consectetur a...</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="msg-more"><a href="#">See All Messages</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="dropdown icon-nav">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa-stack fa-2x has-badge" data-count="7"><i class="fa fa-bell" aria-hidden="true"></i></span></a>
+                           <div class="dropdown-menu notif-drop">
+                              <div class="panel-head">
+                                 <div class="msg-title notif-title">
+                                    <h5>Notification<span class="fa-stack fa-3x has-badge large-badge" data-count="7"></span></h5>
+                                 </div>
+                                 <div class="clear"></div>
+                              </div>
+                              <div class="msg-list">
+                                 <ul>
+                                    <li>
+                                       <a href="#">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>New WO Created</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="request-approve.html">
+                                          <div class="msg-view">
+                                             <div class="user-pic"><img src="images/profile.png" alt=""></div>
+                                             <div class="msg-content">
+                                                <h5>Sandeep Singh</h5>
+                                                <p>Request Approval</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="msg-more"><a href="#">See All Notification</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="dropdown profile-menu">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/profile.png" alt=""> </a>
+                           <ul class="dropdown-menu settings-drop">
+                              <li><a href="password_reset.html">Password Reset</a></li>
+                              <li><a href="settings.html">Settings</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="login.html">Logout</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+         </nav>
+      </section>
+      <!-- /header -->
+      <!--   content -->
+      <section class="add-customer">
+         <div class="container-fluid">
+            <!-- page-head -->
+            <div class="pagetop">
+               <!-- <div class="page-head">
+                  <h3 class="page-title">Service Plan<span class="badge badge-cname">DC Generator</span></h3>
+               </div> -->
+               <div class="page-breadcrumb">
+                  <!-- <ol class="breadcrumb">
+                     <li><a href="asset_list.html">Assets</a></li>
+                     <li><a href="asset_general.html">Add Equipment</a></li>
+                     <li class="active">Service Plan</li>
+                  </ol> -->
+               </div>
+               <div class="clear"></div>
+            </div>
+            <!-- //page-head -->
+            <!-- forms -->
+            <div class="general-forms">
+               <div class="vd-vertical-pills">
+                  <div class="vd-vertical-pills-menu">
+                     <ul class="nav nav-pills" id="v-pills-tab" role="tablist">
+                        <li>
+                           <a class="nav-link active"  href="fmea.html" >FMEA</a>
+                        </li>
+                        <li>
+                           <a class="nav-link"  href="rca.html">RCA</a>
+                        </li>
+                       
+                     </ul>
+                  </div>
+                  <div class="vd-vertical-pills-content">
+                     <div class="list-table">
+                        <div class="vd-card">
+                           <div class="table-head">
+                              <div class="table-title">
+                                 <h3 class="page-title">Reliability - FMEA</h3>
+                              </div>
+                              <div class="table-function">
+                                 <div class="vd-filter-dropdown-wrap">
+                                 <button type="button" class="vd-filter-btn">
+                                 Sites
+                                 <img src="images/filter.svg" alt="filter_btn">
+                                 </button>
+                                 <div class="vd-filter-dropdown">
+                                    <div class="vd-form-control">
+                                       <div class="vd-form-control has-icon search-drop">
+                                          <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search" id="Search">
+                                          <div class="input-icon">
+                                             <img src="images/lens.svg" alt="lens">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="vd-form-control">
+                                       <input type="checkbox" id="checkbox-1-1" class="ui-checkbox" /><label for="checkbox-1-1">
+                                       Apollo Hospital, Delhi</label>
+                                    </div>
+                                    <div class="vd-form-control">
+                                       <input type="checkbox" id="checkbox1" class="ui-checkbox" /><label for="checkbox1">
+                                       Apollo Hospital, Mumbai</label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="vd-filter-dropdown-wrap">
+                                 <button type="button" class="vd-filter-btn">
+                                 Functional Location
+                                 <img src="images/filter.svg" alt="filter_btn">
+                                 </button>
+                                 <div class="vd-filter-dropdown">
+                                    <div class="vd-form-control">
+                                       <div class="vd-form-control has-icon search-drop">
+                                          <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search" id="Search">
+                                          <div class="input-icon">
+                                             <img src="images/lens.svg" alt="lens">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="vd-form-control">
+                                       <input type="checkbox" id="checkbox-1-1" class="ui-checkbox" /><label for="checkbox-1-1">Cardiology</label>
+                                    </div>
+                                    <div class="vd-form-control">
+                                       <input type="checkbox" id="checkbox1" class="ui-checkbox" /><label for="checkbox1">Oncology</label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="vd-filter-dropdown-wrap">
+                                 <button type="button" class="vd-filter-btn">
+                                 Facility
+                                 <img src="images/filter.svg" alt="filter_btn">
+                                 </button>
+                                 <div class="vd-filter-dropdown">
+                                    <div class="vd-form-control">
+                                       <div class="vd-form-control has-icon search-drop">
+                                          <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search" id="Search">
+                                          <div class="input-icon">
+                                             <img src="images/lens.svg" alt="lens">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="vd-form-control">
+                                       <input type="checkbox" id="checkbox-1-1" class="ui-checkbox" /><label for="checkbox-1-1">Cardiology</label>
+                                    </div>
+                                    <div class="vd-form-control">
+                                       <input type="checkbox" id="checkbox1" class="ui-checkbox" /><label for="checkbox1">Oncology</label>
+                                    </div>
+                                 </div>
+                              </div>
+                                 <div class="vd-filter-dropdown-wrap">
+                                    <a href="#" class="file-icn" title="Export Excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i></a>
+                                 </div>
+                                 <div class="search">
+                                    <div class="vd-form-control has-icon">
+                                       <input type="text" data-provide="typeahead" class="form-control typeahead" placeholder="Search" id="Search">
+                                       <div class="input-icon">
+                                          <img src="images/lens.svg" alt="lens">
+                                       </div>
+                                    </div>
+                                 </div>
+                                <div class="add-customerbtn">
+                                    <div class="dropdown">
+                                       <button class="btn btn-add" data-toggle="modal" data-target="#callerdetail"><i class="fa fa-plus" aria-hidden="true" style="margin-right: 10px;"></i>Add
+                                       </button>
+                                       
+                                    </div>
+                                    </div>
+                              </div>
+                              <div class="clear"></div>
+                           </div>
+                           <div class="customer-list-table no-filter-table service-table">
+                              <table class="table">
+                                 <thead>
+                                    <tr>
+                                       <th>Equipment</th>
+                                       <th>Sub Assembly</th>
+                                       <th>Maintainable Components</th>
+                                       <th>Parts</th>
+                                       <th>Failure  Part</th>
+                                       <th>Failure Mode</th>
+                                       <th>Failure Reason</th>
+                                       <th>Task</th>
+                                      
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td rowspan="5"><a href="#">MRI</a></td>
+                                       <td rowspan="4">SA1</td>
+                                       <td rowspan="3">SA 1 - MC1</td>
+                                       <td>Part 1</td>
+                                       <td>BRG-Bearing</td>
+                                       <td>Abrasion</td>
+                                       <td>Improper Installation & Assembly</td>
+                                       <td>PM Inspection</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Part 2</td>
+                                       <td>BRG-Bearing</td>
+                                       <td>Abrasion</td>
+                                       <td>Improper Installation & Assembly</td>
+                                       <td>PM Inspection</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Part 3</td>
+                                       <td>BRG-Bearing</td>
+                                       <td>Abrasion</td>
+                                       <td>Improper Installation & Assembly</td>
+                                       <td>PM Inspection</td>
+                                    </tr>
+                                    <tr>
+                                       <td>SA 1 - MC2</td>
+                                       <td>Part 4</td>
+                                       <td>BRG-Bearing</td>
+                                       <td>Abrasion</td>
+                                       <td>Improper Installation & Assembly</td>
+                                       <td>PM Inspection</td>
+                                    </tr>
+                                    <tr>
+                                       <td>SA2</td>
+                                       <td>SA 2 - MC2</td>
+                                       <td>Part 5</td>
+                                       <td>BRG-Bearing</td>
+                                       <td>Abrasion</td>
+                                       <td>Improper Installation & Assembly</td>
+                                       <td>PM Inspection</td>
+                                    </tr>
+                                    <tr>
+                                       <td rowspan="2"><a href="#">DC Generator</a></td>
+                                       <td>SA3</td>
+                                       <td>SA 3 - MC1</td>
+                                       <td>Part 6</td>
+                                       <td>BRG-Bearing</td>
+                                       <td>Abrasion</td>
+                                       <td>Improper Installation & Assembly</td>
+                                       <td>PM Inspection</td>
+                                    </tr>
+                                    <tr>
+                        
+                                       <td>SA4</td>
+                                       <td>SA 4 - MC1</td>
+                                       <td>Part 7</td>
+                                       <td>BRG-Bearing</td>
+                                       <td>Abrasion</td>
+                                       <td>Improper Installation & Assembly</td>
+                                       <td>PM Inspection</td>
+                                    </tr>
+                                    
+                                    
+                                  
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- //forms -->
+         </div>
+      </section>
+      <div class="vd-modal">
+         <div class="modal fade" id="callerdetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h2 class="modal-title" id="exampleModalLongTitle">Add FMEA
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                        <img src="images/modal_close_btn.svg" alt="modal_close_btn">
+                        </span>
+                        </button>
+                     </h2>
+                  </div>
+                  <div class="modal-body">
+                     <div class="row fixed-section">
+                        <div class="col-md-3">
+                           <div class="form-group">
+                              <label for="type">Select Site</label>
+                              <select class="form-control" id="type">
+                                 <option>Select</option>
+                                 <option>Select</option>
+                                 <option>Select</option>
+                                 <option>Select</option>
+                                 <option>Select</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                           <div class="form-group">
+                              <label for="type">Select Functional Location</label>
+                              <select class="form-control" id="type">
+                                 <option>Select</option>
+                                 <option>Select</option>
+                                 <option>Select</option>
+                                 <option>Select</option>
+                                 <option>Select</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                           <div class="form-group">
+                              <label for="type">Select Equipment</label>
+                              <select class="form-control" id="type">
+                                 <option>Select</option>
+                                 <option>Select</option>
+                                 <option>Select</option>
+                                 <option>Select</option>
+                                 <option>Select</option>
+                              </select>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-3">
+                           <div class="form-group">
+                              <label for="type">Sub Assembly</label>
+                              <select class="form-control" id="type">
+                                 <option>Select</option>
+                                 <option>Select</option>
+                                 <option>Select</option>
+                                 <option>Select</option>
+                                 <option>Select</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                        <div class="row">
+                           <div class="col-md-9">
+                              <div class="form-group">
+                                 <label for="text">Add Maintainable Component</label>
+                                 <input type="text" class="form-control">
+                              </div>
+                           </div>
+                           <div class="col-md-3">
+                              <div class="add-form">
+                                 <button class="btn btn-browse"><i class="fa fa-plus" aria-hidden="true"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="form-group">
+                                 <input type="text" value="Comp1, Comp2" data-role="tagsinput" class="form-control" />
+                              </div>
+                           </div>
+                        </div>
+                     </div> 
+                        
+                     </div>
+                     
+                  <div class="contact-table meter-table part-table">
+                        <table class="table">
+                           <thead>
+                              <tr>
+                                 <th>Part No </th>
+                                 <th>Failure Mode</th>
+                                 <th>Failure Reason</th>
+                                 <th>Task</th>
+                                 <th>File Attached</th>
+                                 <th><a class='btn btn-table' id="add-contact"><i class="fa fa-plus" aria-hidden="true" style="margin-right: 7px;"></i>Add</a></th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Part 01 </td>
+                                 <td>Abrasion</td>
+                                 <td>Improper Installation & Assembly</td>
+                                 <td>PM Inspection</td>
+                                 <td><a href="#">File1a.doc</a></td>
+                                 <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                              </tr>
+                              <tr>
+                                 <td>Part 02 </td>
+                                 <td>Adhesion</td>
+                                 <td>Improper Lubrication </td>
+                                 <td>PM Inspection</td>
+                                 <td><a href="#">File1a.doc</a></td>
+                                 <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                              </tr>
+                             
+                            
+                              <tr id="new-contact">
+                                 <td> <input type="text" class="form-control"> </td>
+                                 <td> <input type="text" class="form-control"></td>
+                                 <td> <input type="text" class="form-control"></td>
+                                 <td> <input type="text" class="form-control"></td>
+                                 <td>
+                                          <div class="input-group table-input">
+                                             <input type="text" class="form-control" readonly="">
+                                             <label class="input-group-btn">
+                                             <span class="btn btn-browse">
+                                             <i class="fa fa-file-text" aria-hidden="true"></i> <input type="file" style="display: none;" multiple="">
+                                             </span>
+                                             </label>
+                                          </div>
+                                       </td>
+                                 <td><a href="#"><img src="images/dotted_menu.svg" alt=""></a></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn vd-btn-outline-primary btn-cancel" data-dismiss="modal">Cancel</button>
+                     <button type="button" class="btn  vd-btn-primary btn-save">Save & Close</button>
+                     <button type="button" class="btn  vd-btn-primary btn-save">Save & Add Next Sub Assembly</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer">
+         <p>© Copyright - Intellithink Industrial IOT Labs Private Limited</p>
+      </footer>
+      <!-- scripts -->
+      <script src="js/jquery-3.1.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src='https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.min.js'></script>
+      <script src="js/moment.js"></script>
+      <script src="js/bootstrap-datetimepicker.js"></script>
+      <script>
+         $(document).ready(
+         function(){
+         $("#add-contact").click(function () {
+            $("#new-contact").show();
+         });
+         
+         });
+      </script>
+      <script>
+         $('#datetimepicker1').datetimepicker({
+         
+          defaultDate: new Date(),
+          showClose: true,
+          // format: 'DD/MM/YYYY',
+          keepOpen: false,
+          icons: {
+              time: "datepicker-icon time-icon",
+              date: "datepicker-icon date-icon",
+              up: "datepicker-icon up-icon",
+              down: "datepicker-icon down-icon",
+              previous: 'datepicker-icon prev-icon',
+              next: 'datepicker-icon next-icon',
+              close: 'datepicker-icon close-icon'
+          }
+         
+         });
+         $('#datetimepicker2').datetimepicker({
+         
+          defaultDate: new Date(),
+          showClose: true,
+          // format: 'DD/MM/YYYY',
+          keepOpen: false,
+          icons: {
+              time: "datepicker-icon time-icon",
+              date: "datepicker-icon date-icon",
+              up: "datepicker-icon up-icon",
+              down: "datepicker-icon down-icon",
+              previous: 'datepicker-icon prev-icon',
+              next: 'datepicker-icon next-icon',
+              close: 'datepicker-icon close-icon'
+          }
+         
+         });
+      </script>
+   </body>
+</html>
