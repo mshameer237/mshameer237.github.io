@@ -11,7 +11,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   color: #1e1b18;
-  background: #f8f9f9;
+  background: #f2f4f4;
 }
 
 .banner {
@@ -156,12 +156,17 @@ body {
   display: block;
 }
 
+#myBtnContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .btn-filter {
   font-size: 14px;
   font-weight: 500;
-  margin-right: 10px;
   border-radius: 0;
-  background: #f8f9f9;
+  background: #f2f4f4;
 }
 
 .btn-filter:hover {
@@ -262,7 +267,7 @@ body {
   margin-top: 20px;
   display: inline-block;
   color: #228cdb;
-  background: #f8f9f9;
+  background: #f2f4f4;
   /* border: 1px solid #228CDB; */
   padding: 8px 15px;
   transition: 0.3s all ease-in-out;
@@ -270,7 +275,7 @@ body {
 
 .card-link:hover {
   color: #fff;
-  background: #c22048;
+  background: #228cdb;
   transition: 0.3s all ease-in-out;
 }
 
@@ -310,10 +315,12 @@ ul.tabs {
   margin: 0px;
   padding: 0px;
   list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 ul.tabs li {
-  background: #f8f9f9;
-  display: inline-block;
+  background: #f2f4f4;
   padding: 20px 30px;
   cursor: pointer;
 }
@@ -329,8 +336,8 @@ ul.tabs li.current {
 
 .tab-content {
   display: none;
-  border-top: 1px solid #f8f9f9;
-  border-bottom: 1px solid #f8f9f9;
+  border-top: 1px solid #f2f4f4;
+  border-bottom: 1px solid #f2f4f4;
   padding-bottom: 40px;
 }
 
@@ -383,7 +390,7 @@ ul.tabs li.current h1 {
   position: relative;
   left: 11px;
   top: 7px;
-  background: #f8f9f9;
+  background: #f2f4f4;
   height: 5px;
 }
 
