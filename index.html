@@ -374,7 +374,7 @@
                 <div class="project-img">
                   <img src="images/pippin.png" alt="pippin" />
                 </div>
-                <div class="content-details" id="panel-3">
+                <div class="content-details" id="panel-7">
                   <h4 class="card-title">
                     Pippin
                   </h4>
@@ -390,7 +390,7 @@
                     <a
                       href="javascript:void(0)"
                       class="card-expand"
-                      data-item="panel-3"
+                      data-item="panel-7"
                       >more</a
                     >
                   </p>
@@ -441,7 +441,7 @@
                 <div class="project-img">
                   <img src="images/cork.png" alt="cork" />
                 </div>
-                <div class="content-details" id="panel-4">
+                <div class="content-details" id="panel-8">
                   <h4 class="card-title">
                     Cork
                   </h4>
@@ -455,7 +455,7 @@
                     <a
                       href="javascript:void(0)"
                       class="card-expand"
-                      data-item="panel-4"
+                      data-item="panel-8"
                       >more</a
                     >
                   </p>
@@ -960,6 +960,48 @@
           $(this).addClass("current");
           $("#" + tab_id).addClass("current");
         });
+      });
+    </script>
+    <script>
+      // $(window).resize(function () {
+      //   if ($(window).width() <= 768) {
+      //     var fixTop = $(".banner").offset().top + 500;
+
+      //     $(window).scroll(function () {
+      //       var currentScroll = $(window).scrollTop();
+      //       if (currentScroll >= fixTop) {
+      //         $("#social-sidebar").hide();
+      //       } else {
+      //         $("#social-sidebar").show();
+      //       }
+      //     });
+      //   }
+      // });
+
+      $(document).ready(function () {
+        $(window).on("resize", function (e) {
+          checkScreenSize();
+        });
+
+        checkScreenSize();
+
+        function checkScreenSize() {
+          var newWindowWidth = $(window).width();
+          if (newWindowWidth < 481) {
+            var fixTop = $(".banner").offset().top + 500;
+
+            $(window).scroll(function () {
+              var currentScroll = $(window).scrollTop();
+              if (currentScroll >= fixTop) {
+                $("#social-sidebar").slideUp();
+              } else {
+                $("#social-sidebar").slideDown();
+              }
+            });
+          } else {
+            return null;
+          }
+        }
       });
     </script>
   </body>

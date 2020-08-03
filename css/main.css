@@ -364,7 +364,8 @@ ul.tabs li.current h1 {
 }
 
 .skill-title {
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 .skillBar {
@@ -791,4 +792,34 @@ ul.tabs li.current h1 {
 #social-sidebar a[class*="linkedin"] span,
 #social-sidebar a[class*="linkedin"] span:before {
   background: #0e76a8;
+}
+
+/* =============================================================================================
+-------------------------------  MEDIA QUERIES  ---------------------------------------------
+============================================================================================= */
+
+@media only screen and (max-width: 767px) {
+  .main-title-lg {
+    line-height: 54px;
+    font-size: 38px;
+    width: 100%;
+  }
+  #social-sidebar {
+    top: 0;
+  }
+  .button-down {
+    margin-top: 50px;
+  }
+  .tab-link h1 {
+    font-size: 24px;
+  }
+  .project-img {
+    height: 389px;
+  }
+  .card-text {
+    font-size: 15px;
+  }
+  .skillName {
+    font-size: 16px !important;
+  }
 }
