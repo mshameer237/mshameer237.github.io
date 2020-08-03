@@ -827,3 +827,19 @@ ul.tabs li.current h1 {
     height: 180px;
   }
 }
+
+@media (max-width: 320px) {
+  .main-title-lg {
+    line-height: 46px;
+    font-size: 28px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-title-lg {
+    line-height: 58px;
+    font-size: 32px;
+    width: 100%;
+  }
+}
