@@ -50,7 +50,7 @@ body {
   position: relative;
   padding: 5px;
   margin: 30px auto;
-  background: #228cdb;
+  background: #d8315b;
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -101,7 +101,7 @@ body {
 }
 
 .download-resume a {
-  color: #228cdb;
+  color: #3e92cc;
   font-size: 18px;
   font-weight: 400;
 }
@@ -165,11 +165,11 @@ body {
 }
 
 .btn-filter:hover {
-  color: #228cdb;
+  color: #d8315b;
 }
 
 .btn-filter.active {
-  background-color: #228cdb;
+  background-color: #d8315b;
   color: white;
 }
 
@@ -212,7 +212,7 @@ body {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   overflow: hidden;
-  background: #228cdb;
+  background: #d8315b;
   color: #ffffff;
 }
 
@@ -261,9 +261,9 @@ body {
   font-size: 14px;
   margin-top: 20px;
   display: inline-block;
-  color: #228cdb;
+  color: #d8315b;
   background: #f8f9f9;
-  /* border: 1px solid #228CDB; */
+  /* border: 1px solid #d8315b; */
   padding: 8px 15px;
   transition: 0.3s all ease-in-out;
 }
@@ -283,7 +283,7 @@ body {
 }
 
 .card-expand {
-  color: #228cdb;
+  color: #d8315b;
   font-weight: 500;
   display: inline-block;
   vertical-align: middle;
@@ -319,11 +319,11 @@ ul.tabs li {
 }
 
 ul.tabs li:hover {
-  color: #228cdb;
+  color: #d8315b;
 }
 
 ul.tabs li.current {
-  background: #228cdb;
+  background: #d8315b;
   font-weight: 500;
 }
 
@@ -725,7 +725,7 @@ ul.tabs li.current h1 {
 }
 
 #social-sidebar a {
-  background: #228cdb;
+  background: #d8315b;
   color: #fff;
   text-decoration: none;
   display: block;
