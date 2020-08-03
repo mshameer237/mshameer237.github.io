@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="16px" viewBox="0 0 23 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>contact_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="my-safe-place" transform="translate(-1191.000000, -46.000000)" fill-rule="nonzero" stroke="#000000" stroke-width="0.4" fill="#000000">
+            <g id="contact_icon" transform="translate(1192.000000, 47.000000)">
+                <g id="Group">
+                    <g id="Group-18">
+                        <path d="M0,0.106060606 L0,13.9151515 L20.9436553,13.9151515 L20.9436553,0.106060606 L0,0.106060606 L0,0.106060606 Z M20.2597808,13.2151515 L0.683874459,13.2151515 L0.683874459,0.763636364 L20.2597808,0.763636364 L20.2597808,13.2151515 Z" id="Shape"></path>
+                        <polygon id="Shape" points="4.12461783 10.7545455 8.09963812 7.44545455 10.4718277 9.3969697 12.8440172 7.44545455 16.8190375 10.7545455 17.246459 10.2454545 13.356923 7 17.246459 3.77575758 16.8190375 3.24545455 10.4718277 8.52727273 4.12461783 3.24545455 3.69719629 3.77575758 7.58673228 7 3.69719629 10.2454545"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
