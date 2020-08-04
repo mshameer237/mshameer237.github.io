@@ -824,7 +824,7 @@ ul.tabs li.current h1 {
     height: 389px;
   }
   .card-text {
-    font-size: 15px;
+    font-size: 16px;
   }
   .skillName {
     font-size: 16px !important;
@@ -833,6 +833,9 @@ ul.tabs li.current h1 {
     width: 180px;
     height: 180px;
   }
+  .btn-filter {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -840,6 +843,9 @@ ul.tabs li.current h1 {
     line-height: 46px;
     font-size: 28px;
     width: 100%;
+  }
+  .btn-filter {
+    font-size: 14px;
   }
 }
 
