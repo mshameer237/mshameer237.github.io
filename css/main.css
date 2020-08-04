@@ -523,6 +523,18 @@ ul.tabs li.current h1 {
   float: left;
 }
 
+.skill-axure {
+  width: 80%;
+  height: 5px;
+  -webkit-animation: Animate-JS 3s;
+  animation: Animate-JS 3s;
+  background-color: #7922a3;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+
 .skill-React {
   width: 70%;
   height: 5px;
