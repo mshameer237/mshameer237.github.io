@@ -378,11 +378,12 @@ ul.tabs li.current h1 {
 .skillBar {
   width: 100%;
   height: 35px;
-  margin: 35px 0;
+  margin: 20px 0;
 }
 
 .skill-content {
   margin-left: 30px;
+  display: none;
 }
 
 .skillArea {
@@ -811,6 +812,12 @@ ul.tabs li.current h1 {
 #social-sidebar a[class*="linkedin"] span,
 #social-sidebar a[class*="linkedin"] span:before {
   background: #0e76a8;
+}
+
+#social-sidebar a[class*="phone"]:hover,
+#social-sidebar a[class*="phone"] span,
+#social-sidebar a[class*="phone"] span:before {
+  background: #52be80;
 }
 
 /* =============================================================================================
