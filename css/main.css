@@ -846,7 +846,7 @@ ul.tabs li.current h1 {
 }
 
 #fadeText {
-  min-width: 315px;
+  min-width: 50%;
   display: inline-block;
 }
 
@@ -855,6 +855,9 @@ ul.tabs li.current h1 {
 ============================================================================================= */
 
 @media only screen and (max-width: 767px) {
+  .banner {
+    padding: 60px 50px;
+  }
   .main-title-lg {
     line-height: 64px;
     font-size: 38px;
