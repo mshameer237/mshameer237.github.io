@@ -50,8 +50,8 @@
           <img src="images/profile.gif" alt="" class="profile-img" />
         </div>
         <h1 class="main-title-lg wow fadeInUp">
-          Hello! I'm <span>Shameer</span>. <br />I am an UI / UX Designer and an
-          <span>UI Developer</span>.
+          Hello There ! I'm <span>Shameer</span>. <br />I am an
+          <span id="fadeText">UI Developer</span>.
         </h1>
 
         <a
@@ -1075,6 +1075,23 @@
           }
         }
       });
+    </script>
+    <script>
+      var timeOnEachText = 1500;
+
+      var text = ["UI Designer", "UX Designer", "UI Developer"];
+      var counter = 0;
+      var elem = document.getElementById("fadeText");
+      function change() {
+        jQuery(elem)
+          .delay(timeOnEachText)
+          .fadeTo(900, 0, function () {
+            this.innerHTML = text[counter];
+            counter = ++counter % text.length;
+            jQuery(this).fadeTo(900, 1, change);
+          });
+      }
+      change();
     </script>
   </body>
 </html>

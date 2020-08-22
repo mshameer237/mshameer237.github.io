@@ -31,17 +31,18 @@ body {
 
 .main-title-lg {
   font-weight: 300;
-  line-height: 72px;
+  line-height: 78px;
   font-size: 48px;
   color: rgba(255, 255, 255, 0.9);
-  width: 70%;
+  width: 100%;
+  min-width: 100%;
   margin: auto;
   margin-top: 30px;
 }
 
 .main-title-lg span {
-  font-weight: 600;
-  color: #fffaff;
+  font-weight: 500;
+  color: #228cdb;
 }
 
 /* down arrow */
@@ -55,10 +56,25 @@ body {
   width: 60px;
   border-radius: 50%;
   transition: all 0.2s linear;
+  animation-name: hook;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hook {
+  0% {
+    transform: translate3d(0, 0px, 0);
+  }
+  50% {
+    transform: translate3d(0, 20px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0px, 0);
+  }
 }
 
 .button-down:hover {
-  transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 60px, 0);
 }
 
 .button-down::after {
@@ -167,15 +183,22 @@ body {
   font-weight: 500;
   border-radius: 0;
   background: #f2f4f4;
+  transition: 0.3s all ease-in-out;
 }
 
 .btn-filter:hover {
   color: #228cdb;
 }
 
+.btn-filter:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .btn-filter.active {
   background-color: #228cdb;
   color: white;
+  transition: 0.3s all ease-in-out;
 }
 
 .project-img img {
@@ -323,6 +346,7 @@ ul.tabs li {
   background: #f2f4f4;
   padding: 20px 30px;
   cursor: pointer;
+  transition: 0.3s all ease-in-out;
 }
 
 ul.tabs li:hover {
@@ -332,6 +356,7 @@ ul.tabs li:hover {
 ul.tabs li.current {
   background: #228cdb;
   font-weight: 500;
+  transition: 0.3s all ease-in-out;
 }
 
 .tab-content {
@@ -818,6 +843,11 @@ ul.tabs li.current h1 {
 #social-sidebar a[class*="phone"] span,
 #social-sidebar a[class*="phone"] span:before {
   background: #52be80;
+}
+
+#fadeText {
+  min-width: 315px;
+  display: inline-block;
 }
 
 /* =============================================================================================
