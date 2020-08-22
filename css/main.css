@@ -855,6 +855,11 @@ ul.tabs li.current h1 {
 ============================================================================================= */
 
 @media only screen and (max-width: 767px) {
+  .card-link {
+    font-weight: 400;
+    font-size: 13px;
+    padding: 8px 10px;
+  }
   .banner {
     padding: 60px 50px;
   }
