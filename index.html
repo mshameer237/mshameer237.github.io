@@ -1064,9 +1064,11 @@
         var state = document.readyState;
         if (state == "interactive") {
           document.getElementById("loader").style.display = "flex";
+          document.body.style.overflow = "hidden";
         } else if (state == "complete") {
           setTimeout(function () {
             document.getElementById("loader").style.display = "none";
+            document.body.style.overflow = "visible";
           }, 0);
         }
       };

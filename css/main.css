@@ -847,7 +847,7 @@ ul.tabs li.current h1 {
   height: 100vh;
   position: fixed;
   top: 0;
-  background-color: #1e1b18;
+  background-color: rgba(30, 27, 24, 1);
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
